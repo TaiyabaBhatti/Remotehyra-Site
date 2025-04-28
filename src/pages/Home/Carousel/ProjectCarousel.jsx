@@ -9,6 +9,7 @@ import Tag from '../../../components/ui/Tag';
 
 export default function ProjectCarousel() {
   return (
+    <>
     <Swiper 
     className="w-full !flex flex-row  justify-between items-center gap-10"
     modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -22,7 +23,7 @@ export default function ProjectCarousel() {
     projects.map((project,index)=>{
         return (
             <SwiperSlide key={index}>
-                <div className='flex flex-row justify-center max-tablet-lg1:flex-col-reverse  gap-x-5 gap-y-10 items-center'>
+                <div className='flex mb-10 flex-row justify-center max-tablet-lg1:flex-col-reverse  gap-x-5 gap-y-10 items-center'>
         
                <ContentLayout  title={project.title} element={(<Tag text={project.tag}/>)} classTitle="section-white section-home-carousel"  subtitle={project.desc} btn_text="View Case Study"/>
               
@@ -36,5 +37,7 @@ export default function ProjectCarousel() {
     })
 }
     </Swiper>
+  
+    </>
   )
 }

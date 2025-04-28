@@ -72,3 +72,29 @@ color: white;
     font-size: 24px;
   }
   
+  /* .swiper-pagination {
+    background-color: black;
+  } */
+  .swiper-pagination {
+  width: fit-content !important;
+    left:50px !important;
+   
+  }
+
+  @media (max-width: 1032px) {
+    .swiper-pagination {
+     
+        left:400px !important;
+      
+      }
+  }
+
+  @media (max-width: 950px) {
+    .swiper-pagination {
+     
+        left:100px !important;
+      
+      }
+  }
+ 
+  
