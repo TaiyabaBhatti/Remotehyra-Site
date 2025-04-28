@@ -22,9 +22,9 @@ export default function ProjectCarousel() {
     projects.map((project,index)=>{
         return (
             <SwiperSlide key={index}>
-                <div className='flex flex-row justify-center max-tablet-lg1:flex-col-reverse  gap-x-5 gap-y-10 items-start'>
+                <div className='flex flex-row justify-center max-tablet-lg1:flex-col-reverse  gap-x-5 gap-y-10 items-center'>
         
-               <ContentLayout title={project.title} element={(<Tag text={project.tag}/>)} titleColor="text-black" subtitle={project.desc} btn_text="View Case Study"/>
+               <ContentLayout  title={project.title} element={(<Tag text={project.tag}/>)} classTitle="section-white section-home-carousel"  subtitle={project.desc} btn_text="View Case Study"/>
               
               
                 <div className='w-96 h-96 max-desktop-s2:w-72 max-desktop-s2:h-72 m-auto  max-tablet-lg1:w-full'>

@@ -13,8 +13,7 @@ export default function ExpertiseSection() {
       <ContentLayout
         title="Our Expertise"
         subtitle="Leveraging cutting-edge AI technologies to deliver innovative solutions"
-        titleColor="text-white" 
-        properties="flex-1"
+        classTitle="section-black"
       />
 
 <div className=""><img src={sideImage} alt="" className="w-[570px] h-[479px] max-desktop-lg3:w-[470px] "/></div>
@@ -23,14 +22,12 @@ export default function ExpertiseSection() {
 
 {/* cards */}
     <div className="flex flex-row gap-10 flex-wrap ">
-
 <ExpertiseCard title="Chat-Bots" subtitle="Intelligent conversational agents for customer engagement" fadeDelay="200"/>
 <ExpertiseCard title="RAG Systems" subtitle="Retrieval Augmented Generation for enhanced AI responses" fadeDelay="300"/>
 <ExpertiseCard title="AI Agents" subtitle="Autonomous AI agents for task automation" fadeDelay="400"/>
 <ExpertiseCard title="Prompt Engineering" subtitle="Optimized prompts for maximum AI performance" fadeDelay="500"/>
 <ExpertiseCard title="AI Automation" subtitle="Streamlined processes with intelligent automation" fadeDelay="600"/>
 <ExpertiseCard title="LLMs" subtitle="Large Language Models for advanced text processing" fadeDelay="700"/>
-
     </div>
 
 
