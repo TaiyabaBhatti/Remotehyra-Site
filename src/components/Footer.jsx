@@ -1,4 +1,4 @@
-import LogoBox from "./ui/logoBox";
+import LogoBox from "./ui/LogoBox";
 import PolicyTabs from "./ui/PolicyTabs";
 import SocialHandles from "./ui/SocialHandles";
 import SupportTabs from "./ui/SupportTabs";
