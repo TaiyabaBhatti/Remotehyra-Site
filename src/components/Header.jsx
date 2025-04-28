@@ -3,7 +3,7 @@
 import TabLink from "./ui/TabLink"
  import { Link } from "react-router-dom" 
  import { FaBars } from "react-icons/fa6";
-import LogoBox from "./ui/logoBox";
+import LogoBox from "./ui/LogoBox";
 
  
  export default function Header({}){
