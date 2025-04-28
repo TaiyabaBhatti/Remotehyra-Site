@@ -13,9 +13,18 @@
 @theme{
 
 --breakpoint-desktop-s1:1024px;
+--breakpoint-desktop-s2:1032px;
 --breakpoint-desktop-lg1:1146px;
+--breakpoint-desktop-lg2:1160px;
+--breakpoint-desktop-lg3:1174px;
+--breakpoint-desktop-lg3:1210px;
 --breakpoint-tablet-lg1:950px;
+--breakpoint-tablet-lg2:988px;
+--breakpoint-tablet-s1:710px;
+--breakpoint-tablet-s2:800px;
 
+--color-darkbrown:#2F2F2F;
+--color-hoverGray:#737373;
 
 
 }
@@ -34,5 +43,26 @@ body{
   }
 
 
+
 }
 
+.section-black{
+  background-color: black;
+}
+
+.section-black h1{
+color: white;
+}
+.section-black p{
+  color: #CDCDC1;
+  }
+
+
+  .section-white h1{
+  color: var(--color-darkbrown);
+  }
+  .section-white p{
+    color: var(--color-hoverGray);
+    }
+
+  

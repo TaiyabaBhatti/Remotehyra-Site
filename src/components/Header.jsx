@@ -3,21 +3,18 @@
 import TabLink from "./ui/TabLink"
  import { Link } from "react-router-dom" 
  import { FaBars } from "react-icons/fa6";
+import LogoBox from "./ui/logoBox";
 
  
  export default function Header({}){
 
 
     return (
-        <header id="navbar" className="bg-white relative mb-20 z-50 flex flex-row items-center justify-between w-full py-5 max-w-6xl m-auto px-2">
+        <header id="navbar" className="bg-white relative mb-20 z-50 flex flex-row items-center justify-between w-full py-5 max-w-6xl m-auto px-2 h-full">
             <div className="flex flex-row  w-full gap-x-48  justify-center">
-                <div>
-                    <Link to={"/"}  className="logo-text text-5xl text-purple-800 font-bold hover:opacity-80 duration-150">
-                        Remotehyra
-                    </Link>
-                </div>
+                <LogoBox text_size="text-5xl" logo_size="size-16" properties="flex-row items-center gap-x-5"/>
          
-      <div className=" flex flex-row gap-x-10 font-semibold">
+      <div className=" flex flex-row gap-x-10 max-tablet-lg1:gap-x-4 font-semibold items-center">
         <nav className=" text-black flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
          
             <TabLink text="Home" path="/home" />
@@ -28,35 +25,28 @@ import TabLink from "./ui/TabLink"
        
         </nav>
 
-        <button className="text-3xl  max-tablet-lg1:block hidden relative
-          z-50
-          cursor-pointer
-          duration-300
-           before:absolute
-           before:-z-10
-           before:hidden
-           hover:before:block
-           before:h-full before:w-full before:rounded-full
-          hover:before:w-full
-  hover:before:transition-all
-  hover:before:duration-300
-    before:top-0
-    before:left-0
-    before:bg-black 
+        <button className="text-2xl max-tablet-lg1:flex hidden relative
+        
+    bg-linear-to-r
+            from-[#BC01FF]
+            to-[#46178f]
+            text-white
+        size-14  items-center justify-center rounded-full
     p-2
-    before:opacity-30">
+    ">
           <FaBars/>
         </button>
 
-<Button properties="nav-content text-[18px] block border-2
-          px-7 py-3
-          rounded-3xl  relative
+<Button properties="nav-content max-tablet-s1:hidden border-2
+           py-3
+           hover:bg-linear-to-r
+                hover:from-[#BC01FF]
+                 hover:to-[#46178f]
+                 hover:duration-200
+                 hover:border-0
+                 hover:text-white
+                 
           z-50" text="Contact Us"/>
-       
-
-{/* <AnimButton text="login/sign up" properties="bg-black"/> */}
-
-       
       </div>
             </div>
     </header>
