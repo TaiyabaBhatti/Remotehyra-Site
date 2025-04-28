@@ -58,26 +58,18 @@ export default function HomePage() {
 
       <Wrapper properties="mb-20">
       <HomeHeadline title="AI Solutions We Build" subtitle="Transforming businesses with cutting-edge AI technology"/>
-{/* <div className="flex flex-row mt-20">
-    <div className="">
-        <FcHeadset className="text-5xl"/>
-<h1 className="font-bold text-2xl">Financial Assistance</h1>
-<p className="text-[20px]">AI-powered financial advice and management</p>
-    </div>
-
-    <div>
-    </div>
-</div> */}
 
 
 <div className="relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 w-full h-full mt-36">          
 {/* row-1 */}
 
-            <div className="relative">
+            <div  className="relative">
               <SolutionCards
                 title="Financial Assistance"
                 desc="Smart AI-powered financial advice and management"
                 properties=" relative before:content-['1'] "
+                slideDelay="200"
+               
               />
             </div>
             <div className="md:block hidden">{/* Empty */}</div>
@@ -86,6 +78,8 @@ export default function HomePage() {
                 title="Learning Academies"
                 desc="Personalized educational platforms powered by AI"
                 properties="relative before:content-['2'] "
+                slideDelay="350"
+                
               />
             </div>
 
@@ -97,6 +91,8 @@ export default function HomePage() {
               title="AI Tutors"
               desc="One-on-one learning experience with AI mentors"
               properties="before:content-['3'] relative "
+              slideDelay="500"
+              
             />
             
           </div>
@@ -109,6 +105,8 @@ export default function HomePage() {
                 title="Voice Agents"
                 desc="Natural voice interactions for seamless communication"
                 properties=" relative before:content-['4'] "
+                slideDelay="650"
+                
               />
             </div>
             <div className="md:block hidden">{/* Empty */}</div>
@@ -117,6 +115,8 @@ export default function HomePage() {
                 title="Customer Service Agent"
                 desc="24/7 automated support with human-like interactions"
                 properties="relative before:content-['5'] "
+                slideDelay="800"
+                
               />
             </div>
 

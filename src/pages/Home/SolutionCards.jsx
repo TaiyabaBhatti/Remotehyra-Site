@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function SolutionCards({ title, desc, properties }) {
+export default function SolutionCards({ title, desc, properties,slideDelay,slideDir }) {
   return (
-    <div
+    <div data-aos="fade-up" data-aos-delay={slideDelay}
       className={` h-full w-full bg-white min-w-80 text-black shadow-2xl rounded-lg py-3 space-y-5 px-5 ${properties} relative before:absolute before:size-8 before:rounded-full max-md:py-8
       before:bg-linear-to-r
             before:from-[#BC01FF]

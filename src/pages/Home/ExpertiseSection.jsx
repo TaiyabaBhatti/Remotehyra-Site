@@ -24,12 +24,12 @@ export default function ExpertiseSection() {
 {/* cards */}
     <div className="flex flex-row gap-10 flex-wrap ">
 
-<ExpertiseCard title="Chat-Bots" subtitle="Intelligent conversational agents for customer engagement"/>
-<ExpertiseCard title="RAG Systems" subtitle="Retrieval Augmented Generation for enhanced AI responses"/>
-<ExpertiseCard title="AI Agents" subtitle="Autonomous AI agents for task automation"/>
-<ExpertiseCard title="Prompt Engineering" subtitle="Optimized prompts for maximum AI performance"/>
-<ExpertiseCard title="AI Automation" subtitle="Streamlined processes with intelligent automation"/>
-<ExpertiseCard title="LLMs" subtitle="Large Language Models for advanced text processing"/>
+<ExpertiseCard title="Chat-Bots" subtitle="Intelligent conversational agents for customer engagement" fadeDelay="200"/>
+<ExpertiseCard title="RAG Systems" subtitle="Retrieval Augmented Generation for enhanced AI responses" fadeDelay="300"/>
+<ExpertiseCard title="AI Agents" subtitle="Autonomous AI agents for task automation" fadeDelay="400"/>
+<ExpertiseCard title="Prompt Engineering" subtitle="Optimized prompts for maximum AI performance" fadeDelay="500"/>
+<ExpertiseCard title="AI Automation" subtitle="Streamlined processes with intelligent automation" fadeDelay="600"/>
+<ExpertiseCard title="LLMs" subtitle="Large Language Models for advanced text processing" fadeDelay="700"/>
 
     </div>
 
