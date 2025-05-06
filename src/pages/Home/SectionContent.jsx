@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../../components/ui/Button'
 
 
-export default function SectionContent({title,subtitle,src,btnText,classTitle,screenWidth}) {
+export default function SectionContent({title,subtitle,src,btnText,btnDecor,classTitle}) {
   return (
    <div className={`${classTitle} py-10 h-full  overflow-hidden max-desktop-s3:mt-10`}>
    <div className={`flex relative z-50 flex-row gap-x-36  justify-between max-desktop-s3:flex-col`}>
@@ -12,18 +12,11 @@ export default function SectionContent({title,subtitle,src,btnText,classTitle,sc
              </h1>
              <p className="text-[20px] font-semibold ">
              {subtitle}
-             </p>
-            
+             </p> 
              <Button
                  text={btnText}
-                 properties="
-            bg-linear-to-r
-            from-[#BC01FF]
-            to-[#46178f]
-            text-white
-            
-            py-4 
-               "
+                 btnDecor={btnDecor}
+                 properties={btnDecor}
                />
            </div>
            <div className="relative">

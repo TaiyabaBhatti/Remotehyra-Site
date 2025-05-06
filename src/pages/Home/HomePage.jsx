@@ -1,32 +1,28 @@
-import Button from "../../components/ui/Button";
 import Wrapper from "../../components/ui/Wrapper";
 import ProjectCarousel from "./Carousel/ProjectCarousel";
 import ExpertiseSection from "./ExpertiseSection";
 import Headline from "../../components/ui/Headline";
 import SectionContent from "./SectionContent";
-import { FcHeadset } from "react-icons/fc";
 import SolutionCards from "./SolutionCards";
 
 export default function HomePage() {
   return (
     <>
-
       {/* Hero section */}
       <SectionContent
         title=" Empowering Businesses with AI Solutions"
         subtitle=" Transform your business with our innovative AI-driven solutions."
         classTitle="section-white"
         btnText="Explore now"
+        btnDecor="bg-linear-to-r from-[#BC01FF] to-[#46178f] text-white"
         screenWidth="max-desktop-s1"
         src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"
-       
       />
 
       {/* Experties */}
       <ExpertiseSection />
 
       {/* AI solutions  */}
-
       <Wrapper>
         <Headline
           title="AI Solutions We Build"
@@ -138,27 +134,24 @@ export default function HomePage() {
       </Wrapper>
 
       {/* Featured section */}
-
       <Wrapper propertie="">
-      <Headline
+        <Headline
           title="AI Solutions We Build"
           subtitle="Transforming businesses with cutting-edge AI technology"
-          properties="mb-20"
         />
         <ProjectCarousel />
       </Wrapper>
 
-
-{/* Get in Touch */}
-
+      {/* Get in Touch */}
       <SectionContent
         title="Ready to Transform Your Business with
         AI Solutions?"
         subtitle="Let's discuss how we can help you achieve your business goals with our cutting-edge technology solutions."
         screenWidth="max-desktop-s3"
         classTitle="section-black"
+        btnDecor="bg-black text-white border-[1px] hover:bg-white hover:text-black"
         btnText="Get Started"
-        src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"       
+        src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"
       />
     </>
   );

@@ -28,6 +28,10 @@
 --color-hoverGray:#737373;
 --color-paratextColor:#CDCDC1;
 
+--text-lg:1.125rem;   /* 18px */
+--text-sm:0.75rem;  /* 12px */
+
+
 
 }
 
@@ -91,9 +95,7 @@ color: white;
 
   @media (max-width: 950px) {
     .swiper-pagination {
-     
         left:100px !important;
-      
       }
   }
  
