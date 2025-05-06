@@ -23,6 +23,7 @@
 --breakpoint-tablet-lg2:988px;
 --breakpoint-tablet-s1:710px;
 --breakpoint-tablet-s2:800px;
+--breakpoint-mobile-s1:470px;
 
 --color-darkbrown:#2F2F2F;
 --color-hoverGray:#737373;
@@ -33,10 +34,14 @@
 
 
 
+
+
+
 }
 
 body{
   overflow-x: hidden;
+
   
 }
 
@@ -47,10 +52,14 @@ body{
   #navbar .nav-content{
    font-size: 16px;
   }
-
-
-
 }
+
+@media (max-width: 470px) {
+  #navbar .logo-text {
+   font-size: 24px; /* text size for smaller screens */
+  }
+}
+
 
 .section-black{
   background-color: black;

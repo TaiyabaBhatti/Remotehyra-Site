@@ -31,7 +31,7 @@ export default function Footer({}) {
     <div className="flex flex-row justify-between gap-x-10 flex-wrap max-md:flex-col-reverse">
         <p className="text-gray-500 font-semibold text-[13px]">Remotehyra © All Rights Reserved</p>
     
-    <div className="flex flex-row gap-x-8 items-start">
+    <div className="flex flex-row gap-x-8 items-start flex-wrap">
         
     <PolicyTabs text="Contact" path="/"/>
     <PolicyTabs text="FAQ" path="/"/>

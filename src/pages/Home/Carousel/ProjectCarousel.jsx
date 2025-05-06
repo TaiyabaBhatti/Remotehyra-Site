@@ -16,7 +16,7 @@ export default function ProjectCarousel() {
     navigation={false}
     pagination={{clickable:true}}
     effect={"flip"}
-    grabCursor={true}
+    grabCursor={false}
     spaceBetween={30}
     >
 {
@@ -24,8 +24,8 @@ export default function ProjectCarousel() {
         return (
             <SwiperSlide key={index}>
                 <div className='flex mb-10 flex-row justify-center max-tablet-lg1:flex-col-reverse  gap-x-5 gap-y-10 items-center'>
-        
-               <ContentLayout  title={project.title} element={(<Tag text={project.tag}/>)} classTitle="section-white section-home-carousel"  subtitle={project.desc} btn_text="View Case Study"/>
+
+               <ContentLayout  title={project.title} element={(<Tag text={project.tag}/>)} classTitle="section-white section-home-carousel"  subtitle={project.desc} btn_text="View Case Study" btnDecor="border-[1px] bg-transparent text-black hover:bg-linear-to-r hover:from-[#BC01FF] hover:to-[#46178f] hover:text-white  hover:border-0"/>
               
               
                 <div className='w-96 h-96 max-desktop-s2:w-72 max-desktop-s2:h-72 m-auto  max-tablet-lg1:w-full'>

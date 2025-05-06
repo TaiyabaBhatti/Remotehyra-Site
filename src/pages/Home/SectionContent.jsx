@@ -21,9 +21,9 @@ export default function SectionContent({title,subtitle,src,btnText,btnDecor,clas
            </div>
            <div className="relative">
             {/* svg backside image */}
-               <div className={`absolute -z-40  max-desktop-s3:left-10  -left-96 top-0`}>
+               <div className={`absolute -z-40  max-desktop-s3:left-10 max-md:hidden  -left-96 top-0`}>
                <svg
-            className="w-250 h-170 relative max-desktop-s3:-right-32"
+            className="w-250 h-170 max-desktop-s3:ml-[calc(100vw-910px)]"
             viewBox="0 0 951 359"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function SectionContent({title,subtitle,src,btnText,btnDecor,clas
             </defs>
           </svg>
                </div>
-         <div className={`h-[589px] w-lg max-desktop-s3:ml-[50%]`}>
+         <div className={`h-[589px] w-lg max-desktop-s3:ml-[calc(100vw-512px)] max-sm:w-md max-md max-md:ml-[calc(100vw-448px)]`}>
             <img src={src} alt="" className=" object-cover rounded-bl-2xl"/></div>
               
            </div>

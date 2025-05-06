@@ -85,8 +85,8 @@ export default function HomePage() {
 
           {/* Bg-effect */}
 
-          <div className="absolute top-0 -z-50 max-md:left-0 left-[30%]">
-            <svg
+          <div className="max-sm:hidden absolute top-0 -z-50 left-[calc(100vw-85%)] max-md:left-[calc(100vw-95%)] ">
+            <svg className="max-md:w-96"
               width="486"
               height="470"
               viewBox="0 0 486 470"
