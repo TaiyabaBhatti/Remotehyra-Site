@@ -16,7 +16,7 @@ export default function ExpertiseSection() {
         classTitle="section-black"
       />
 
-<div className=""><img src={sideImage} alt="" className="w-[570px] h-[479px] max-desktop-lg3:w-[470px] "/></div>
+<div className=""><img src={sideImage} alt="" className="w-[570px] h-[479px] object-contain max-desktop-lg3:w-[470px] "/></div>
 
       </div>
 

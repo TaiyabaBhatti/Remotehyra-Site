@@ -24,6 +24,8 @@
 --breakpoint-tablet-s1:710px;
 --breakpoint-tablet-s2:800px;
 --breakpoint-mobile-s1:470px;
+--breakpoint-mobile-s2:524px;
+--breakpoint-mobile-s3:407px;
 
 --color-darkbrown:#2F2F2F;
 --color-hoverGray:#737373;
@@ -43,6 +45,42 @@ body{
   overflow-x: hidden;
 
   
+}
+
+/* 
+
+section Heading: .heading
+section description: .desc
+
+card heading: .sub-title
+card description: .sub-desc
+
+
+
+*/
+
+
+
+@media (max-width:405px){
+body .heading{
+  font-size: 2rem !important;
+}
+
+body .desc{
+  font-size: 1rem !important;
+}
+
+.sub-title{
+  font-size: 1.25rem !important;
+}
+.sub-desc{
+  font-size: 1rem !important;
+}
+
+h1{
+  /* font-size: 0.7rem !important; */
+}
+
 }
 
 @media (max-width: 1154px) {

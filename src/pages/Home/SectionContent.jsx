@@ -5,12 +5,12 @@ import Button from '../../components/ui/Button'
 export default function SectionContent({title,subtitle,src,btnText,btnDecor,classTitle}) {
   return (
    <div className={`${classTitle} py-10 h-full  overflow-hidden max-desktop-s3:mt-10`}>
-   <div className={`flex relative z-50 flex-row gap-x-36  justify-between max-desktop-s3:flex-col`}>
-   <div className={` pl-24 px-6  flex flex-col items-start  gap-y-6 justify-center  w-[50%] max-desktop-s3:w-[80%] `}>
-             <h1 className="text-5xl  text-darkbrown font-bold">
+   <div className={`flex relative z-50 flex-row gap-x-36 max-md:gap-y-14 justify-between max-desktop-s3:flex-col`}>
+   <div className={` pl-24 max-sm:px-5 px-6  flex flex-col items-start  gap-y-6 justify-center  w-[50%] max-sm:w-full max-desktop-s3:w-[80%] `}>
+             <h1 className="text-5xl  text-darkbrown font-bold heading">
                {title}
              </h1>
-             <p className="text-[20px] font-semibold ">
+             <p className="desc text-[20px] font-semibold ">
              {subtitle}
              </p> 
              <Button
@@ -19,7 +19,7 @@ export default function SectionContent({title,subtitle,src,btnText,btnDecor,clas
                  properties={btnDecor}
                />
            </div>
-           <div className="relative">
+           <div className="relative max-sm:pl-5">
             {/* svg backside image */}
                <div className={`absolute -z-40  max-desktop-s3:left-10 max-md:hidden  -left-96 top-0`}>
                <svg
@@ -49,7 +49,7 @@ export default function SectionContent({title,subtitle,src,btnText,btnDecor,clas
             </defs>
           </svg>
                </div>
-         <div className={`h-[589px] w-lg max-desktop-s3:ml-[calc(100vw-512px)] max-sm:w-md max-md max-md:ml-[calc(100vw-448px)]`}>
+         <div className={` w-lg max-desktop-s3:ml-[calc(100vw-512px)] max-sm:w-sm  max-md:ml-[calc(100vw-384px)]`}>
             <img src={src} alt="" className=" object-cover rounded-bl-2xl"/></div>
               
            </div>
