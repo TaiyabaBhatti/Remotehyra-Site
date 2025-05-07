@@ -46,7 +46,7 @@ import LogoBox from "./ui/LogoBox";
                  hover:border-0
                  hover:text-white
                  
-          z-50" text="Contact Us"/>
+          z-50" text="Contact Us" path="/contact"/>
       </div>
             </div>
     </header>
