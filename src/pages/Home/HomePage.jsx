@@ -14,7 +14,7 @@ export default function HomePage() {
         subtitle=" Transform your business with our innovative AI-driven solutions."
         classTitle="section-white"
         btnText="Explore now"
-        btnDecor="bg-linear-to-r from-[#BC01FF] to-[#46178f] text-white"
+        btnDecor="bg-gradient-to-r from-pink-500 to-violet-500  text-white"
         screenWidth="max-desktop-s1"
         src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"
       />

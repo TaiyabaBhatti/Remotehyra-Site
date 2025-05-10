@@ -15,6 +15,7 @@
 --breakpoint-desktop-s1:1024px;
 --breakpoint-desktop-s2:1032px;
 --breakpoint-desktop-s3:1130px;
+--breakpoint-desktop-s4:1042px;
 --breakpoint-desktop-lg1:1146px;
 --breakpoint-desktop-lg2:1160px;
 --breakpoint-desktop-lg3:1174px;
@@ -23,6 +24,7 @@
 --breakpoint-tablet-lg2:988px;
 --breakpoint-tablet-s1:710px;
 --breakpoint-tablet-s2:800px;
+--breakpoint-tablet-s3:872px;
 --breakpoint-mobile-s1:470px;
 --breakpoint-mobile-s2:524px;
 --breakpoint-mobile-s3:407px;
@@ -33,11 +35,6 @@
 
 --text-lg:1.125rem;   /* 18px */
 --text-sm:0.75rem;  /* 12px */
-
-
-
-
-
 
 }
 
@@ -77,19 +74,8 @@ body .desc{
   font-size: 1rem !important;
 }
 
-h1{
-  /* font-size: 0.7rem !important; */
-}
 
-}
 
-@media (max-width: 1154px) {
-  #navbar .logo-text {
-    font-size: 2rem; /* text size for smaller screens */
-  }
-  #navbar .nav-content{
-   font-size: 16px;
-  }
 }
 
 @media (max-width: 470px) {
@@ -147,3 +133,5 @@ color: white;
   }
  
   
+ 
+
