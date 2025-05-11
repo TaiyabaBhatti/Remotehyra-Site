@@ -10,7 +10,7 @@ export default function SectionContent({
   classTitle,
 }) {
   return (
-    <div className={`${classTitle} overflow-hidden  h-[675px] max-desktop-s4:h-[880px]  max-md:pb-8`}>
+    <div className={`${classTitle} overflow-hidden  h-[675px] max-desktop-s4:h-[880px] max-sm:h-[800px] `}>
       <div
         className={`flex flex-row relative z-50  max-md:gap-0 max-sm:gap-y-10 justify-end gap-x-48 max-desktop-lg3:gap-x-24 max-desktop-s4:flex-col max-desktop-s4:mt-10`}
       >
@@ -61,7 +61,8 @@ export default function SectionContent({
             </svg>
           </div>
           <div
-            className={`w-lg  max-md:w-[450px] max-sm:px-10 
+            className={`w-lg  max-md:w-[450px] 
+              max-sm:w-96 max-mobile-s1:max-w-80 
           `}
           >
             <img src={src} alt="" className=" object-cover rounded-bl-2xl" />

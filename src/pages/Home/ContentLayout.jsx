@@ -5,7 +5,7 @@ export default function ContentLayout({title,subtitle,btn_text=null,btnDecor,cla
   return (
     <div className={`max-w-[525px] max-desktop-s4:max-w-full  ${classTitle} flex flex-col items-start  gap-y-6 justify-center `}>
              {element}
-              <h1 className={`text-5xl font-bold heading`}>
+              <h1 className={`sub-title text-5xl font-bold`}>
                 {title}
               </h1>
               <p className={`desc font-semibold text-lg`}>

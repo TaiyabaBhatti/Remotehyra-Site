@@ -32,7 +32,7 @@ import LogoBox from "./ui/LogoBox";
             from-[#BC01FF]
             to-[#46178f]
             text-white
-        size-14 max-mobile-s3:size-10 max-mobile-s3:text-lg  items-center justify-center rounded-full
+        size-14 max-mobile-s1:size-10 max-mobile-s1:text-lg  items-center justify-center rounded-full
     p-2
     ">
           <FaBars/>

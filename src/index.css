@@ -28,6 +28,7 @@
 --breakpoint-mobile-s1:470px;
 --breakpoint-mobile-s2:524px;
 --breakpoint-mobile-s3:407px;
+--breakpoint-mobile-s4:360px;
 
 --color-darkbrown:#2F2F2F;
 --color-hoverGray:#737373;
@@ -80,7 +81,8 @@ body .desc{
 
 @media (max-width: 470px) {
   #navbar .logo-text {
-   font-size: 24px; /* text size for smaller screens */
+   font-size: 30px; 
+   /* text size for smaller screens */
   }
 }
 
@@ -128,10 +130,22 @@ color: white;
 
   @media (max-width: 950px) {
     .swiper-pagination {
-        left:100px !important;
+         left:calc(50% - 10px) !important;
       }
-  }
+   .section-home-carousel{
+    margin-bottom: 20px;
+   }
+    }
+
+
+    .section-black{
+      padding-block: 70px;
+    }
  
   
- 
+@media (max-width:640px) {
+  .section-home-carousel h1{
+font-size: 20px;
+  }
+} 
 
