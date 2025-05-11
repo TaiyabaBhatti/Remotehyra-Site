@@ -10,17 +10,17 @@ export default function SectionContent({
   classTitle,
 }) {
   return (
-    <div className={`${classTitle} overflow-hidden  h-[675px] max-desktop-s4:h-[950px]  max-md:pb-8`}>
+    <div className={`${classTitle} overflow-hidden  h-[675px] max-desktop-s4:h-[880px]  max-md:pb-8`}>
       <div
         className={`flex flex-row relative z-50  max-md:gap-0 max-sm:gap-y-10 justify-end gap-x-48 max-desktop-lg3:gap-x-24 max-desktop-s4:flex-col max-desktop-s4:mt-10`}
       >
         <div
-          className={` px-10  flex flex-col items-start  gap-y-6 justify-center  max-w-[525px] max-desktop-s4:max-w-full`}
+          className={` px-10  flex flex-col items-start  gap-y-6 justify-center  max-w-[525px] max-desktop-s4:max-w-4xl m-auto`}
         >
           <h1 className="text-5xl  text-darkbrown font-bold heading">
             {title}
           </h1>
-          <p className="desc text-[20px] font-semibold ">{subtitle}</p>
+          <p className="desc text-[20px] font-semibold">{subtitle}</p>
           <Button text={btnText} btnDecor={btnDecor} properties={btnDecor} />
         </div>
         <div className="relative  flex justify-end  ">

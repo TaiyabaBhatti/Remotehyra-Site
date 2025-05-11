@@ -10,7 +10,7 @@ import LogoBox from "./ui/LogoBox";
 
 
     return (
-        <header id="navbar" className="bg-white relative z-50 flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full">
+        <header id="navbar" className="bg-white relative z-50 flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl ">
             <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
                 <LogoBox text_size="text-4xl" logo_size="size-12" properties="flex-row gap-x-2"/>
          

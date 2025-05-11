@@ -8,29 +8,29 @@ import ExpertiseCard from "./ExpertiseCard";
 
 export default function ExpertiseSection() {
   return (
-    <Wrapper properties="bg-black space-y-20">
-        <div className="flex flex-row justify-center gap-5 items-center max-tablet-lg2:flex-col">
+    <Wrapper properties="bg-black">
+      <div className=" space-y-20 max-w-6xl max-desktop-s4:max-w-3xl m-auto">
+        <div className="flex flex-row justify-between gap-10 items-center max-desktop-s4:flex-col">
       <ContentLayout
-        title="Our Expertise"
-        subtitle="Leveraging cutting-edge AI technologies to deliver innovative solutions"
+        title="Our Expertise in smart and scalable AI support."
+        subtitle="Leveraging cutting-edge AI technologies to deliver innovative solutions. Utilizing a Large Language Model (LLM) and the use generative AI to recommend and optimize customer service workflows"
         classTitle="section-black"
       />
 
-<div className=""><img src={sideImage} alt="" className="w-[570px] h-[479px] object-contain max-desktop-lg3:w-[470px] "/></div>
+<div className=""><img src={sideImage} alt="" className="w-[570px] h-[440px] object-contain  max-desktop-s4:h-[380px]"/></div>
 
       </div>
 
 {/* cards */}
     <div className="flex flex-row gap-10 flex-wrap ">
-<ExpertiseCard title="Chat-Bots" subtitle="Intelligent conversational agents for customer engagement" fadeDelay="200"/>
-<ExpertiseCard title="RAG Systems" subtitle="Retrieval Augmented Generation for enhanced AI responses" fadeDelay="300"/>
-<ExpertiseCard title="AI Agents" subtitle="Autonomous AI agents for task automation" fadeDelay="400"/>
-<ExpertiseCard title="Prompt Engineering" subtitle="Optimized prompts for maximum AI performance" fadeDelay="500"/>
-<ExpertiseCard title="AI Automation" subtitle="Streamlined processes with intelligent automation" fadeDelay="600"/>
-<ExpertiseCard title="LLMs" subtitle="Large Language Models for advanced text processing" fadeDelay="700"/>
+<ExpertiseCard title="Chat-Bots" subtitle="Intelligent conversational agents for customer engagement" />
+<ExpertiseCard title="RAG Systems" subtitle="Retrieval Augmented Generation for enhanced AI responses" fadeDelay="200"/>
+<ExpertiseCard title="AI Agents" subtitle="Autonomous AI agents for task automation" fadeDelay="300"/>
+<ExpertiseCard title="Prompt Engineering" subtitle="Optimized prompts for maximum AI performance" fadeDelay="400"/>
+<ExpertiseCard title="AI Automation" subtitle="Streamlined processes with intelligent automation" fadeDelay="500"/>
+<ExpertiseCard title="LLMs" subtitle="Large Language Models for advanced text processing" fadeDelay="600"/>
     </div>
-
-
+</div>
     </Wrapper>
   );
 }

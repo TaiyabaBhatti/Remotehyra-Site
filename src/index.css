@@ -35,7 +35,7 @@
 
 --text-lg:1.125rem;   /* 18px */
 --text-sm:0.75rem;  /* 12px */
-
+--text-xsm:0.625rem; 
 }
 
 body{

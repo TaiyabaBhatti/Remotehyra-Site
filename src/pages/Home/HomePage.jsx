@@ -22,14 +22,14 @@ export default function HomePage() {
       {/* Experties */}
       <ExpertiseSection />
 
+
       {/* AI solutions  */}
       <Wrapper>
         <Headline
           title="AI Solutions We Build"
           subtitle="Transforming businesses with cutting-edge AI technology"
         />
-
-        <div className="relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 w-full h-full mt-36">
+        <div className={`relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 max-w-6xl max-desktop-lg3: m-auto h-full  mt-36`}>
           {/* row-1 */}
 
           <div className="relative">
@@ -85,10 +85,9 @@ export default function HomePage() {
 
           {/* Bg-effect */}
 
-          <div className="max-sm:hidden absolute top-0 -z-50 left-[calc(100vw-85%)] max-md:left-[calc(100vw-95%)] ">
-            <svg className="max-md:w-96"
-              width="486"
-              height="470"
+          <div className="max-sm:hidden w-full flex justify-center m-auto absolute top-0 -z-50 ">
+            <svg className="w-[540px]"
+            
               viewBox="0 0 486 470"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +135,7 @@ export default function HomePage() {
       {/* Featured section */}
       <Wrapper propertie="">
         <Headline
-          title="AI Solutions We Build"
+          title="Our Latest AI Solutions"
           subtitle="Transforming businesses with cutting-edge AI technology"
         />
         <ProjectCarousel />
