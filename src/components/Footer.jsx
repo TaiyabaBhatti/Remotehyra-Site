@@ -16,7 +16,7 @@ export default function Footer({}) {
         element="true"
       />
 
-<div className="flex flex-row gap-x-8 gap-y-2   h-fit items-center max-tablet-lg2:flex-col max-tablet-lg2:items-start">
+<div className="flex flex-row gap-x-8 gap-y-5   h-fit items-center max-tablet-lg2:flex-col max-tablet-lg2:mt-5 max-tablet-lg2:items-start">
   <div className="flex flex-row max-md:flex-col max-tablet-s1:gap-y-0.5  gap-x-5">
     <SupportTabs text="Machine Learning" path="/"  />
     <SupportTabs text="Natural Language Processing" path="/" />
@@ -27,7 +27,7 @@ export default function Footer({}) {
 </div>
       </div>
     
-    <div className="flex flex-row justify-between gap-x-10 flex-wrap max-md:flex-col-reverse max-mobile-s1:mt-10 max-mobile-s1:gap-y-2">
+    <div className="flex flex-row justify-between gap-x-10 flex-wrap max-md:flex-col-reverse max-mobile-s1:mt-5 max-mobile-s1:gap-y-2">
         <p className="text-gray-500 font-semibold text-[13px]  ">Remotehyra © All Rights Reserved</p>
     
     <div className="flex flex-row gap-x-8  items-start flex-wrap">
