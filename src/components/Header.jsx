@@ -4,13 +4,37 @@ import TabLink from "./ui/TabLink"
  import { Link } from "react-router-dom" 
  import { FaBars } from "react-icons/fa6";
 import LogoBox from "./ui/LogoBox";
+import { useState } from "react";
+import Menu from "./ui/Menu";
+
 
  
  export default function Header({}){
 
+    // state for toggle between hide and open hamburger menu
+
+    const [toggle,settoggle] = useState(false);
+
+    const toggleFun = () => {
+
+if(toggle){
+settoggle(false)
+}
+
+else{
+    settoggle(true)
+}
+    }
+
+
 
     return (
-        <header id="navbar" className="bg-white relative z-50 flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl ">
+
+        <>
+        <header id="navbar" className="bg-white">
+
+<div className="relative z-50 flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
+
             <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
                 <LogoBox text_size="text-4xl" logo_size="size-12" properties="flex-row gap-x-2"/>
          
@@ -26,8 +50,7 @@ import LogoBox from "./ui/LogoBox";
         </nav>
 
 {/* hidden menu icon */}
-        <button className="text-2xl max-tablet-lg1:flex hidden relative
-        
+        <button onClick={toggleFun} className="text-2xl max-tablet-lg1:flex hidden relative  
     bg-linear-to-r
             from-[#BC01FF]
             to-[#46178f]
@@ -49,7 +72,21 @@ import LogoBox from "./ui/LogoBox";
           z-50" text="Contact Us" path="/contact"/>
       </div>
             </div>
+
+       
+
+          </div>
+               {toggle && <Menu toggleStatus={toggle}/>
+            
+          }
     </header>
+
+
+
+
+
+
+    </>
     )
     
      }

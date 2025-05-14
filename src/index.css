@@ -152,3 +152,43 @@ font-size: 20px;
   }
 } 
 
+
+/* Hamburger */
+
+
+
+.side-menu{
+  animation-name:slidedown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-110%);
+  -webkit-transform: translateY(-110%);
+  -moz-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
+  -o-transform: translateY(-110%);
+}
+
+
+
+@keyframes slidedown {
+  
+from{
+ 
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+}
+
+to{
+  
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+}
+
+
+}
