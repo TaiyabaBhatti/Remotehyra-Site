@@ -4,7 +4,7 @@ import TabLink from "./ui/TabLink"
  import { Link } from "react-router-dom" 
  import { FaBars } from "react-icons/fa6";
 import LogoBox from "./ui/LogoBox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "./ui/Menu";
 
 
@@ -14,6 +14,28 @@ import Menu from "./ui/Menu";
     // state for toggle between hide and open hamburger menu
 
     const [toggle,settoggle] = useState(false);
+    const [resize,setResize] = useState()
+    
+useEffect(()=>{
+
+const handleSideMenuResize = ()=>{
+
+if(window.innerWidth > 950){
+settoggle(false)
+}
+
+}
+
+window.addEventListener('resize',handleSideMenuResize) 
+
+return () => {
+    window.removeEventListener('resize',handleSideMenuResize)
+}
+
+
+},[])
+
+
 
     const toggleFun = () => {
 
@@ -31,9 +53,9 @@ else{
     return (
 
         <>
-        <header id="navbar" className="bg-white">
+        <header id="navbar" className="bg-white relative z-50">
 
-<div className="relative z-50 flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
+<div className=" flex flex-row items-center justify-between p-10 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
 
             <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
                 <LogoBox text_size="text-4xl" logo_size="size-12" properties="flex-row gap-x-2"/>
@@ -76,12 +98,11 @@ else{
        
 
           </div>
-               {toggle && <Menu toggleStatus={toggle}/>
-            
-          }
     </header>
 
-
+ {toggle && <Menu toggleStatus={toggle}/>
+            
+          }
 
 
 

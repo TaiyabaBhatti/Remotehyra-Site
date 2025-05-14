@@ -159,7 +159,8 @@ font-size: 20px;
 
 .side-menu{
   animation-name:slidedown;
-  animation-duration: 1s;
+ animation-duration: 1s;
+
   animation-fill-mode: forwards;
   transform: translateY(-110%);
   -webkit-transform: translateY(-110%);
@@ -182,12 +183,11 @@ from{
 }
 
 to{
-  
-  transform: translateY(-10%);
-  -webkit-transform: translateY(-10%);
-  -moz-transform: translateY(-10%);
-  -ms-transform: translateY(-10%);
-  -o-transform: translateY(-10%);
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
 }
 
 
