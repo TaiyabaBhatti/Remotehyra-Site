@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../../components/ui/Wrapper";
 import Button from "../../components/ui/Button";
 import ContentLayout from "./ContentLayout";
-import sideImage from "../../assets/images/expertise_side_img.webp"
+import sideImage from "../../assets/images/expertise_side_img.png"
 import ExpertiseCard from "./ExpertiseCard";
 
 

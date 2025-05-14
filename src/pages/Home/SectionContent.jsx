@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../../components/ui/Button";
+import bgPattern from '../../assets/images/bg-pattern-10.png'
+import rightPattern from '../../assets/images/right-pattern-2.png'
 
 export default function SectionContent({
   title,
@@ -7,15 +9,18 @@ export default function SectionContent({
   src,
   btnText,
   btnDecor,
-  classTitle,
+  classTitle,uniqueTitle
 }) {
   return (
-    <div className={`${classTitle} overflow-hidden  h-[675px] max-desktop-s4:h-[880px] max-sm:h-[800px] `}>
-      <div
-        className={`flex flex-row relative  max-md:gap-0 max-sm:gap-y-10 justify-end gap-x-48 max-desktop-lg3:gap-x-24 max-desktop-s4:flex-col max-desktop-s4:mt-10`}
-      >
+    <div className={`${classTitle} relative overflow-hidden   
+    `}>
+      
+      <div className="flex max-w-7xl ml-auto max-desktop-s4:max-w-5xl gap-x-5  items-center justify-end max-tablet-lg2:flex-col max-tablet-lg2:items-start 
+    max-tablet-lg2:m-auto
+    max-tablet-lg2:max-w-4xl
+     max-tablet-lg2:mt-10">
         <div
-          className={`same-spacing px-10  flex flex-col items-start  gap-y-6 justify-center  max-w-[525px] max-desktop-s4:max-w-4xl m-auto`}
+          className={`same-spacing flex   mt-8 flex-col items-start pl-10 max-tablet-lg2:pl-7 gap-y-10 max-w-[625px] max-tablet-lg2:max-w-full `}
         >
           <h1 className="text-5xl  text-darkbrown font-bold heading">
             {title}
@@ -23,52 +28,27 @@ export default function SectionContent({
           <p className="desc text-[20px] font-semibold">{subtitle}</p>
           <Button text={btnText} btnDecor={btnDecor} properties={btnDecor} />
         </div>
-        <div className="relative  flex justify-end  ">
-          {/* svg backside image */}
-          <div
-            className={`absolute w-full -z-40    top-0 -left-[calc(100vw-945px)] max-desktop-lg3:-left-[calc(100vw-925px)] max-desktop-lg1:-left-[calc(100vw-900px)]
-              max-desktop-s3:-left-[calc(100vw-800px)] max-desktop-s4:left-[60px]
-              max-tablet-s3:left-0
-             max-tablet-s1:-left-[80px]
-             max-md:left-[50px]
-                `}
-          >
-            <svg
-              className="w-250  h-170 max-md:w-190 "
-              viewBox="0 0 951 340"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M45 552L45.0001 455.999C45.0001 422.862 71.863 395.999 105 395.999L150.764 395.999L215.032 395.999C248.325 395.999 275.252 368.892 275.031 335.6L274.681 282.97L274.681 150.701L274.681 105C274.681 71.8629 301.544 45 334.681 45L590.34 45L906 45"
-                stroke="url(#paint0_linear_903:2012)"
-                strokeWidth="90"
-                strokeLinecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_903:2012"
-                  x1="461.739"
-                  y1="53.9753"
-                  x2="462.552"
-                  y2="548.371"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop offset="0" stopColor="#6BDAB6"></stop>
-                  <stop offset="1" stopColor="#66E0F6"></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div
-            className={`w-lg  max-md:w-[450px] 
-              max-sm:w-96 max-mobile-s1:max-w-80 
-          `}
-          >
-            <img src={src} alt="" className=" object-cover rounded-bl-2xl" />
-          </div>
-        </div>
-      </div>
+      
+<div className={`relative w-full`}>
+ 
+{uniqueTitle === "hero" ? 
+
+(<img src={src} alt="" className="max-h-[550px] min-h-[500px] ml-auto relative z-50 w-2xl object-cover max-tablet-lg2:rotate-30   max-tablet-lg2:w-full max-sm:min-h-36
+  " />) :(
+  <>
+  <img src={src} alt="" className="w-2xl object-cover max-h-[550px] min-h-[500px] max-md:size-96 max-mobile-s2:min-h-96  ml-auto " /> 
+
+<img src={rightPattern} alt="" className="hidden max-tablet-lg2:block absolute top-0 left-0  size-80 max-md:size-64  max-md:mt-20 opacity-50 object-cover max-mobile-s2:-left-24 max-mobile-s3:hidden"/>
+</>
+  ) }
+
+ 
+</div>
+
+
+</div>
+
+ <img src={bgPattern} alt=""   className="absolute  -bottom-20 max-w-2xl    left-0  -z-20 max-tablet-lg2:hidden"/>
     </div>
   );
 }

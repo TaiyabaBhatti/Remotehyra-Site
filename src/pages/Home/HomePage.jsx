@@ -4,6 +4,8 @@ import ExpertiseSection from "./ExpertiseSection";
 import Headline from "../../components/ui/Headline";
 import SectionContent from "./SectionContent";
 import SolutionCards from "./SolutionCards";
+import frontCover from '../../assets/images/bg-pattern-3.png'
+import sideImg from '../../assets/images/tech-people-3.png'
 
 export default function HomePage() {
   return (
@@ -13,10 +15,11 @@ export default function HomePage() {
         title=" Empowering Businesses with AI Solutions"
         subtitle=" Transform your business with our innovative AI-driven solutions."
         classTitle="section-white"
+        uniqueTitle="hero"
         btnText="Explore now"
         btnDecor="bg-gradient-to-r from-pink-500 to-violet-500  text-white"
-        screenWidth="max-desktop-s1"
-        src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"
+        
+        src={frontCover}
       />
 
       {/* Experties */}
@@ -150,7 +153,7 @@ export default function HomePage() {
         classTitle="section-black"
         btnDecor="bg-black text-white border-[1px] hover:bg-white hover:text-black"
         btnText="Get Started"
-        src="https://forethought.ai/wp-content/uploads/2021/10/homepage-hero.png"
+        src={sideImg}
       />
     </>
   );
