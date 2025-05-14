@@ -192,3 +192,9 @@ to{
 
 
 }
+
+@media (max-width:678px) {
+  .same-spacing{
+    padding-inline: 18px;
+  }
+}

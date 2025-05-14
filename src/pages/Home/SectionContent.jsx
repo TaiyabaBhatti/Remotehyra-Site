@@ -15,7 +15,7 @@ export default function SectionContent({
         className={`flex flex-row relative  max-md:gap-0 max-sm:gap-y-10 justify-end gap-x-48 max-desktop-lg3:gap-x-24 max-desktop-s4:flex-col max-desktop-s4:mt-10`}
       >
         <div
-          className={` px-10  flex flex-col items-start  gap-y-6 justify-center  max-w-[525px] max-desktop-s4:max-w-4xl m-auto`}
+          className={`same-spacing px-10  flex flex-col items-start  gap-y-6 justify-center  max-w-[525px] max-desktop-s4:max-w-4xl m-auto`}
         >
           <h1 className="text-5xl  text-darkbrown font-bold heading">
             {title}

@@ -6,7 +6,7 @@ import SupportTabs from "./ui/SupportTabs";
 
 export default function Footer({}) {
   return (
-    <footer className="bg-white mt-10  py-9 px-5 rounded-tl-lg rounded-tr-lg max-w-6xl max-desktop-s4:max-w-4xl max-mobile-s1:w-full m-auto space-y-5">
+    <footer className="bg-white mt-10 same-spacing  py-9 px-5 rounded-tl-lg rounded-tr-lg max-w-6xl max-desktop-s4:max-w-4xl max-mobile-s1:w-full m-auto space-y-5">
       
       <div className="flex flex-row justify-between gap-5 flex-wrap max-tablet-lg2:flex-col">
       <LogoBox

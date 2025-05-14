@@ -53,9 +53,9 @@ else{
     return (
 
         <>
-        <header id="navbar" className="bg-white relative z-50">
+        <header id="navbar" className=" bg-white relative z-50">
 
-<div className=" flex flex-row items-center justify-between py-10 px-7 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
+<div className="same-spacing flex flex-row items-center justify-between py-10 px-7 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
 
             <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
                 <LogoBox text_size="text-4xl" logo_size="size-12" properties="flex-row gap-x-2"/>
