@@ -64,10 +64,10 @@ else{
         <nav className=" text-black flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
          
             <TabLink text="Home" path="/home" />
-            <TabLink text="Services" />
-            <TabLink text="Portfolio" />
-            <TabLink text="About" />
-            <TabLink text="Blog" />
+            <TabLink text="Services" path="/services"/>
+            <TabLink text="Portfolio" path="portfolio"/>
+            <TabLink text="About" path="/about"/>
+            <TabLink text="Blog" path="blog"/>
        
         </nav>
 

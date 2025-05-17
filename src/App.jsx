@@ -11,7 +11,7 @@ import PageTitle from "./routing/PageTitle";
 
 function App() {
 
-  const currentLocation = useLocation();
+ 
   
  
  useEffect(()=>{
