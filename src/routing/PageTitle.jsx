@@ -11,20 +11,13 @@ export default function PageTitle() {
       document.title = "Contact Us | Remotehyra";
     } else if (currentLocation.pathname === "/about") {
       document.title = "About | Remotehyra";
-    }
-    else if (currentLocation.pathname === "/services") {
+    } else if (currentLocation.pathname === "/services") {
       document.title = "Services | Remotehyra";
     } else if (currentLocation.pathname === "/portfolio") {
       document.title = "Portfolio | Remotehyra";
-    }
- else if (currentLocation.pathname === "/blog") {
+    } else if (currentLocation.pathname === "/blog") {
       document.title = "Blog | Remotehyra";
     }
-
-
-
-
-
   }, [location.pathname]);
 
   return null;
