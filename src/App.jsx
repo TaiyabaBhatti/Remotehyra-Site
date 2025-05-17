@@ -3,13 +3,25 @@ import Layout from "./routing/Layout";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import PageTitle from "./routing/PageTitle";
+
+
 
 
 function App() {
 
+  const currentLocation = useLocation();
+  
+ 
+ useEffect(()=>{
 
-  useEffect(()=>{
+ 
 
+
+
+
+    // scroll animation
 AOS.init({
   once: false, 
       duration: 600, 
@@ -27,6 +39,7 @@ AOS.init({
   return (
 
     <Layout>
+<PageTitle/>
       <PagesRoute />
     </Layout>
   );

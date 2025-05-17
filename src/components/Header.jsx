@@ -14,7 +14,7 @@ import Menu from "./ui/Menu";
     // state for toggle between hide and open hamburger menu
 
     const [toggle,settoggle] = useState(false);
-    const [resize,setResize] = useState()
+  
     
 useEffect(()=>{
 
@@ -91,7 +91,7 @@ else{
                  hover:border-0
                  hover:text-white
                  
-          z-50" text="Contact Us" path="/contact"/>
+          z-50" text="Contact Us" path="/contact-us"/>
       </div>
             </div>
 

@@ -8,6 +8,13 @@ import frontCover from '../../assets/images/bg-pattern-3.png'
 import sideImg from '../../assets/images/tech-people-3.png'
 
 export default function HomePage() {
+
+
+
+
+
+
+
   return (
     <>
       {/* Hero section */}

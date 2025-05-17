@@ -6,7 +6,8 @@ export default function PagesRoute({}) {
   return (
     <Routes>
       <Route path="/" element={<HomePage />}></Route>
-      <Route path="/contact" element={<ContactPage />}></Route>
+      <Route path="/home" element={<HomePage />}></Route>
+      <Route path="/contact-us" element={<ContactPage />}></Route>
     </Routes>
   );
 }

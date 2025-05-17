@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Wrapper from '../../components/ui/Wrapper'
 import Headline from '../../components/ui/Headline'
 import ContactForm from './ContactForm'
 
 
 export default function ContactPage() {
+
+
+
+
+
+
+
+
+
   return (
 <Wrapper>
      <Headline
