@@ -1,7 +1,5 @@
 import React from "react";
 import Lottie from "react-lottie";
-import anim from "../../assets/lottie/about-card-anim.png";
-import anim2 from "../../assets/lottie/about-card-anim-1.json";
 
 export default function RankingCard({ title, numeric, icon }) {
   return (

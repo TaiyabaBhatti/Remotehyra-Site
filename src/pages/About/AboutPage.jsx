@@ -10,6 +10,7 @@ import static1 from "../../assets/lottie/about-card-1.png";
 import static2 from "../../assets/lottie/about-card-2.png";
 import static3 from "../../assets/lottie/about-card-3.png";
 import static4 from "../../assets/lottie/about-card-4.png";
+import OurStrength from "./OurStrength";
 
 export default function AboutPage() {
   const sectionRef = useRef();
@@ -73,7 +74,6 @@ export default function AboutPage() {
             title="Leading the market with unmatched results"
             classTitle="section-black"
           />
-
           <div className="flex flex-row flex-wrap  gap-y-5 items-center  justify-center gap-x-5">
             <RankingCard title="Project Taken" numeric="100+" icon={static1} />
             <RankingCard title="Happy Clients" numeric="98%" icon={static4} />
@@ -82,6 +82,8 @@ export default function AboutPage() {
           </div>
         </Wrapper>
       </section>
+
+      <OurStrength />
     </>
   );
 }
