@@ -1,11 +1,17 @@
 import React from "react";
+import Lottie from "react-lottie";
+import anim from "../../assets/lottie/about-card-anim.png";
+import anim2 from "../../assets/lottie/about-card-anim-1.json";
 
-export default function RankingCard({ title, numeric, desc }) {
+export default function RankingCard({ title, numeric, icon }) {
   return (
-    <div className="px-7 py-6 min-w-80 space-y-5 bg-white rounded-2xl">
-      <h6 className="text-base font-medium text-hoverGray">{title}</h6>
-      <h1 className="text-4xl text-darkbrown font-bold">{numeric}</h1>
-      {/* <p className="text-xlg">{desc}</p> */}
+    <div className="min-w-60 max-w-96  bg-gradient-to-r from-pink-500 to-violet-500 p-[1px] rounded-3xl">
+      <div className="px-7  w-full py-6 space-y-5 bg-darkbrown rounded-3xl">
+        <h6 className="text-base font-medium text-paratextColor">{title}</h6>
+        <h1 className="text-5xl text-white font-bold">{numeric}</h1>
+
+        <img src={icon} alt="" className="h-24 object-cover mt-10" />
+      </div>
     </div>
   );
 }

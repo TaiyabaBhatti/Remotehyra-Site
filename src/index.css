@@ -12,6 +12,7 @@
   --breakpoint-desktop-s2: 1032px;
   --breakpoint-desktop-s3: 1130px;
   --breakpoint-desktop-s4: 1042px;
+  --breakpoint-desktop-s5: 1084px;
   --breakpoint-desktop-lg1: 1146px;
   --breakpoint-desktop-lg2: 1160px;
   --breakpoint-desktop-lg3: 1174px;
@@ -29,6 +30,7 @@
   --color-darkbrown: #2f2f2f;
   --color-hoverGray: #737373;
   --color-paratextColor: #cdcdc1;
+  --color-whiteshade: #f7fdfc;
 
   --text-lg: 1.125rem; /* 18px */
   --text-xlg: 1.25rem; /* 18px */
@@ -80,7 +82,7 @@ card description: .sub-desc
 }
 
 .section-black {
-  background-color: black;
+  background-color: var(--color-darkbrown);
 }
 
 .section-black h1 {
@@ -173,3 +175,13 @@ card description: .sub-desc
     padding-inline: 18px;
   }
 }
+/* #c471ed
+#12c2e9 */
+/* .on-scroll-below::before{
+  opacity: 30%;
+background-image: linear-gradient();
+
+  bg-gradient-to-t
+        from-indigo-500
+        before:to-indigo-100
+} */

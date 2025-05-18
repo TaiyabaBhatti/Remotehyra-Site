@@ -1,6 +1,6 @@
 import Button from "./ui/Button";
 import TabLink from "./ui/TabLink";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import LogoBox from "./ui/LogoBox";
 import { useEffect, useState } from "react";
@@ -10,8 +10,19 @@ export default function Header({}) {
   // state for toggle between hide and open hamburger menu
 
   const [toggle, settoggle] = useState(false);
+  const [theme, setTheme] = useState(true);
+  const currentLocation = useLocation();
 
   useEffect(() => {
+    if (
+      currentLocation.pathname === "/" ||
+      currentLocation.pathname === "/home"
+    ) {
+      setTheme(false);
+    } else {
+      setTheme(true);
+    }
+
     const handleSideMenuResize = () => {
       if (window.innerWidth > 950) {
         settoggle(false);
@@ -23,7 +34,7 @@ export default function Header({}) {
     return () => {
       window.removeEventListener("resize", handleSideMenuResize);
     };
-  }, []);
+  }, [currentLocation.pathname, theme]);
 
   const toggleFun = () => {
     if (toggle) {
@@ -35,8 +46,11 @@ export default function Header({}) {
 
   return (
     <>
-      <header id="navbar" className=" bg-white  z-50">
-        <div className="same-spacing flex flex-row items-center justify-between py-10 px-7 max-w-6xl m-auto  h-full max-desktop-s4:max-w-4xl">
+      <header
+        id="navbar"
+        className={`h-28  z-50 ${theme ? "bg-whiteshade" : "bg-white"}`}
+      >
+        <div className="same-spacing flex flex-row items-center justify-between py-6 h-full px-7 max-w-6xl m-auto   max-desktop-s4:max-w-4xl">
           <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
             <LogoBox
               text_size="text-4xl"
