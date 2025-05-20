@@ -4,17 +4,10 @@ import ExpertiseSection from "./ExpertiseSection";
 import Headline from "../../components/ui/Headline";
 import SectionContent from "./SectionContent";
 import SolutionCards from "./SolutionCards";
-import frontCover from '../../assets/images/bg-pattern-3.png'
-import sideImg from '../../assets/images/tech-people-3.png'
+import frontCover from "../../assets/images/bg-pattern-3.png";
+import sideImg from "../../assets/images/tech-people-3.png";
 
 export default function HomePage() {
-
-
-
-
-
-
-
   return (
     <>
       {/* Hero section */}
@@ -25,13 +18,11 @@ export default function HomePage() {
         uniqueTitle="hero"
         btnText="Explore now"
         btnDecor="bg-gradient-to-r from-pink-500 to-violet-500  text-white"
-        
         src={frontCover}
       />
 
       {/* Experties */}
       <ExpertiseSection />
-
 
       {/* AI solutions  */}
       <Wrapper>
@@ -39,7 +30,9 @@ export default function HomePage() {
           title="AI Solutions We Build"
           subtitle="Transforming businesses with cutting-edge AI technology"
         />
-        <div className={`relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 max-w-6xl max-desktop-lg3: m-auto h-full  mt-36`}>
+        <div
+          className={`relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 max-w-6xl max-desktop-lg3: m-auto h-full  mt-36`}
+        >
           {/* row-1 */}
 
           <div className="relative">
@@ -96,8 +89,8 @@ export default function HomePage() {
           {/* Bg-effect */}
 
           <div className="max-sm:hidden w-full flex justify-center m-auto absolute top-0 -z-50 ">
-            <svg className="w-[540px]"
-            
+            <svg
+              className="w-[540px]"
               viewBox="0 0 486 470"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +151,7 @@ export default function HomePage() {
         subtitle="Let's discuss how we can help you achieve your business goals with our cutting-edge technology solutions."
         screenWidth="max-desktop-s3"
         classTitle="section-black"
-        btnDecor="bg-black text-white border-[1px] hover:bg-white hover:text-black"
+        btnDecor="bg-darkbrown text-white border-[1px] hover:bg-white hover:text-black"
         btnText="Get Started"
         src={sideImg}
       />

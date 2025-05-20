@@ -46,31 +46,32 @@ export default function Header({}) {
 
   return (
     <>
-      <header
-        id="navbar"
-        className={`h-28  z-50 ${theme ? "bg-whiteshade" : "bg-white"}`}
-      >
-        <div className="same-spacing flex flex-row items-center justify-between py-6 h-full px-7 max-w-6xl m-auto   max-desktop-s4:max-w-4xl">
-          <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
-            <LogoBox
-              text_size="text-4xl"
-              logo_size="size-12"
-              properties="flex-row gap-x-2"
-            />
+      <section className="relative z-50">
+        <header
+          id="navbar"
+          className={`h-28  z-50 ${theme ? "bg-whiteshade" : "bg-white"}`}
+        >
+          <div className="same-spacing flex flex-row items-center justify-between py-6 h-full px-7 max-w-6xl m-auto   max-desktop-s4:max-w-4xl">
+            <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
+              <LogoBox
+                text_size="text-4xl"
+                logo_size="size-12"
+                properties="flex-row gap-x-2"
+              />
 
-            <div className=" flex flex-row gap-x-10 max-tablet-lg1:gap-x-4 font-semibold items-center">
-              <nav className=" text-black flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
-                <TabLink text="Home" path="/home" />
-                <TabLink text="Services" path="/services" />
-                <TabLink text="Portfolio" path="portfolio" />
-                <TabLink text="About" path="/about" />
-                <TabLink text="Blog" path="blog" />
-              </nav>
+              <div className=" flex flex-row gap-x-10 max-tablet-lg1:gap-x-4 font-semibold items-center">
+                <nav className=" text-black flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
+                  <TabLink text="Home" path="/home" />
+                  <TabLink text="Services" path="/services" />
+                  <TabLink text="Portfolio" path="portfolio" />
+                  <TabLink text="About" path="/about" />
+                  <TabLink text="Blog" path="blog" />
+                </nav>
 
-              {/* hidden menu icon */}
-              <button
-                onClick={toggleFun}
-                className="text-2xl max-tablet-lg1:flex hidden relative  
+                {/* hidden menu icon */}
+                <button
+                  onClick={toggleFun}
+                  className="text-2xl max-tablet-lg1:flex hidden relative  
     bg-linear-to-r
             from-[#BC01FF]
             to-[#46178f]
@@ -78,12 +79,12 @@ export default function Header({}) {
         size-14 max-mobile-s1:size-10 max-mobile-s1:text-lg  items-center justify-center rounded-full
     p-2
     "
-              >
-                <FaBars />
-              </button>
+                >
+                  <FaBars />
+                </button>
 
-              <Button
-                properties="nav-content max-tablet-s1:hidden border-[1px]
+                <Button
+                  properties="nav-content max-tablet-s1:hidden border-[1px]
            py-3
            hover:bg-linear-to-r
                 hover:from-[#BC01FF]
@@ -92,15 +93,16 @@ export default function Header({}) {
                  hover:text-white
                  
           z-50"
-                text="Contact Us"
-                path="/contact-us"
-              />
+                  text="Contact Us"
+                  path="/contact-us"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      {toggle && <Menu toggleStatus={toggle} />}
+        {toggle && <Menu toggleStatus={toggle} />}
+      </section>
     </>
   );
 }
