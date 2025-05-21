@@ -3,7 +3,7 @@ import { FcAdvance } from "react-icons/fc";
 
 export default function ProcessCard({ label, title, desc }) {
   return (
-    <div className="group flex flex-row items-start gap-x-8 px-3 py-5 ">
+    <div className="group flex flex-row items-start gap-x-8 px-3 py-5 shadow-md w-full ">
       <FcAdvance className="text-purple-800 group-hover:scale-150 transition-transform duration-200 text-3xl" />
 
       <div>

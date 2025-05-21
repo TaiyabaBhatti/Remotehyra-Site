@@ -52,11 +52,11 @@ export default function SingleServiceProduct() {
               </div>
 
               {/* Process */}
-              <div className="mt-36 flex flex-row gap-x-16 items-center justify-between max-tablet-s3:flex-col-reverse max-tablet-s3:items-start">
+              <div className="mt-36 flex flex-row gap-x-16 items-center justify-between max-desktop-s4:flex-col gap-y-10 max-tablet-s3:items-start">
                 <img
                   src={sideImg2}
                   alt=""
-                  className="h-[550px] w-96 object-cover max-tablet-s3:hidden rounded-2xl"
+                  className="h-[550px] w-96 object-cover max-desktop-s4:w-full max-desktop-s4:h-52 rounded-2xl "
                 />
                 <ProcessCardCollection dataList={pageData.data.processList} />
               </div>

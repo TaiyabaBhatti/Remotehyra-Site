@@ -156,18 +156,137 @@ const services = [
     title: "AI consulting ",
     desc: "Strategic guidance for AI implementation and optimization",
     icons: <FcIdea className="text-4xl " />,
+    data: {
+      title: "AI Consulting",
+      desc: "Our AI consulting services help businesses navigate the complex landscape of artificial intelligence, ensuring successful implementation and maximum ROI.",
+      benefitList: [
+        "Customized AI strategy development",
+        "Risk mitigation in AI adoption",
+        "Competitive advantage through AI",
+        "Optimized resource allocation",
+        "Clear implementation roadmap",
+      ],
+
+      processList: [
+        {
+          title: "Assessment",
+          desc: "Evaluating current capabilities and opportunities",
+        },
+        {
+          title: "Strategy Development",
+          desc: "Creating a tailored AI implementation plan",
+        },
+        {
+          title: "Solution Design",
+          desc: "Designing optimal AI solutions architecture",
+        },
+        {
+          title: "Implementation Support",
+          desc: "Guidance through the implementation process",
+        },
+        {
+          title: "Optimization",
+          desc: "Continuous improvement and adaptation",
+        },
+      ],
+      skillList: [
+        "AI Frameworks",
+        "cloud platforms",
+        "MLOps tools",
+        "analytics platforms",
+        "visualization",
+        "enterprise AI",
+      ],
+    },
   },
   {
     id: "deep-learning",
     title: "Deep learning",
     desc: "Neural network solutions for complex problem-solving.",
     icons: <FcSerialTasks className="text-4xl " />,
+    data: {
+      title: "Deep Learning",
+      desc: "Our deep learning solutions tackle complex problems through sophisticated neural networks, enabling advanced pattern recognition and decision-making capabilities.",
+      benefitList: [
+        "Complex pattern recognition",
+        "Automated feature extraction",
+        "Scalable learning capabilities",
+        "High accuracy in predictions",
+        "Adaptability to new data",
+      ],
+
+      processList: [
+        {
+          title: "Architecture Design",
+          desc: "Designing optimal neural network architectures",
+        },
+        {
+          title: "Data Preparation",
+          desc: "Processing and organizing training data",
+        },
+        {
+          title: "Model Training",
+          desc: "Training and fine-tuning neural networks",
+        },
+        {
+          title: "Validation",
+          desc: "Comprehensive testing and validation",
+        },
+        {
+          title: "Deployment",
+          desc: "Production deployment and monitoring",
+        },
+      ],
+      skillList: ["TensorFlow", "PyTorch", "Keras", "CUDA", "TPUs", "AutoML"],
+    },
   },
   {
     id: "custome-software-development",
     title: "custome software development",
     desc: "Tailored software solutions designed to meet your unique business needs.",
     icons: <FcSearch className="text-4xl " />,
+    data: {
+      title: "Custom Software Development",
+      desc: "We develop custom software solutions that integrate seamlessly with AI technologies, ensuring scalable, efficient, and future-proof applications.",
+      benefitList: [
+        "Tailored to specific business needs",
+        "Seamless AI integration",
+        "Scalable architecture",
+        "Enhanced security",
+        "Future-proof solutions",
+      ],
+
+      processList: [
+        {
+          title: "Requirements Analysis",
+          desc: "Detailed analysis of business requirements",
+        },
+        {
+          title: "Architecture Design",
+          desc: "Designing scalable system architecture",
+        },
+        {
+          title: "Development",
+          desc: "Agile development with regular updates",
+        },
+        {
+          title: "Testing",
+          desc: "Comprehensive testing and QA",
+        },
+        {
+          title: "Deployment & Support",
+          desc: "Production deployment and ongoing support",
+        },
+      ],
+      skillList: [
+        "React",
+        "Node.js",
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Cloud Platforms",
+      ],
+    },
   },
 ];
 
