@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FcRight } from "react-icons/fc";
 
-export default function ServiceProduct({ icon, title, desc, path }) {
+export default function ServiceCard({ icon, title, desc, path }) {
   return (
     <div
       className="group flex flex-row gap-x-5  rounded-3xl px-4 py-8 

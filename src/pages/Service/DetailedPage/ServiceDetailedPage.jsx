@@ -1,0 +1,81 @@
+import React, { useEffect, useState } from "react";
+import HeroContainer from "../../Common/HeroContainer";
+import Wrapper from "../../../components/ui/Wrapper";
+import Headline from "../../../components/ui/Headline";
+import BenefitCardCollection from "./BenefitCardCollection";
+import sideImg from "../../../assets/images/single-page-side-img.png";
+import sideImg2 from "../../../assets/images/single-page-side-img-2.png";
+import SkillCardCollection from "./SkillCardCollection";
+import ProcessCardCollection from "./ProcessCardCollection";
+import services from "../../../data/serviceDetailedData";
+import { useParams } from "react-router-dom";
+
+export default function SingleServiceProduct() {
+  const { serviceid } = useParams();
+  const [pageData, setPageData] = useState();
+
+  useEffect(() => {
+    setPageData(services.find((service, index) => service.id === serviceid));
+  }, [serviceid]);
+
+  console.log(pageData);
+
+  return (
+    <>
+      {pageData && (
+        <>
+          <section
+            className={`relative w-full pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
+        `}
+          >
+            <HeroContainer
+              tagText="Solutions"
+              title={pageData.title}
+              desc={pageData.data.desc}
+            />
+
+            {/* Hero section bg effect */}
+          </section>
+
+          {/* Benefits and our Process */}
+          <section className="bg-whiteshade">
+            <Wrapper properties="max-w-6xl m-auto max-desktop-s4:max-w-4xl ">
+              {/* Benefits */}
+              <div className="relative z-50 py-10 flex flex-row gap-x-10 items-center justify-between  max-tablet-s3:items-start max-md:flex-col-reverse">
+                <BenefitCardCollection dataList={pageData.data.benefitList} />
+
+                <img
+                  src={sideImg}
+                  alt=""
+                  className=" w-96 object-cover h-full max-md:absolute max-md:bottom-0 max-md:w-full max-md:-z-10 max-md:blur-sm max-md:h-[450px]"
+                />
+              </div>
+
+              {/* Process */}
+              <div className="mt-36 flex flex-row gap-x-16 items-center justify-between max-tablet-s3:flex-col-reverse max-tablet-s3:items-start">
+                <img
+                  src={sideImg2}
+                  alt=""
+                  className="h-[550px] w-96 object-cover max-tablet-s3:hidden rounded-2xl"
+                />
+                <ProcessCardCollection dataList={pageData.data.processList} />
+              </div>
+            </Wrapper>
+          </section>
+
+          {/* Skills */}
+          <section className="bg-darkbrown ">
+            <Wrapper properties="max-w-6xl m-auto max-desktop-s4:max-w-4xl">
+              <Headline
+                title="Skills"
+                subtitle="Technologies we use"
+                classTitle="section-black"
+              />
+              <SkillCardCollection dataList={pageData.data.skillList} />
+            </Wrapper>
+          </section>
+        </>
+      )}
+    </>
+  );
+}
