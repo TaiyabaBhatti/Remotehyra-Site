@@ -11,7 +11,7 @@ const services = [
     id: "machine-learning",
     title: "Machine Learning Solutions",
     desc: "Custom ML models to automate decisions and predict outcomes",
-    icons: <FcSettings className="text-4xl " />,
+    icons: <FcSettings className="text-4xl" />,
     data: {
       title: "Machine Learning Solutions",
       desc: "Our machine learning solutions help businesses leverage data to make better decisions, automate processes, and gain competitive advantages through predictive analytics.",

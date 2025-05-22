@@ -18,8 +18,6 @@ export default function SingleServiceProduct() {
     setPageData(services.find((service, index) => service.id === serviceid));
   }, [serviceid]);
 
-  console.log(pageData);
-
   return (
     <>
       {pageData && (
@@ -32,6 +30,7 @@ export default function SingleServiceProduct() {
               tagText="Solutions"
               title={pageData.title}
               desc={pageData.data.desc}
+              icon={pageData.icons}
             />
 
             {/* Hero section bg effect */}
@@ -47,7 +46,7 @@ export default function SingleServiceProduct() {
                 <img
                   src={sideImg}
                   alt=""
-                  className=" w-96 object-cover h-full max-md:absolute max-md:bottom-0 max-md:w-full max-md:-z-10 max-md:blur-sm max-md:h-[450px]"
+                  className=" w-96 object-cover h-full max-md:hidden"
                 />
               </div>
 

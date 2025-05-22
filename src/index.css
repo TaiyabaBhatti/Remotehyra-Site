@@ -185,3 +185,13 @@ background-image: linear-gradient();
         from-indigo-500
         before:to-indigo-100
 } */
+
+.service-page-icon svg {
+  font-size: 250px;
+}
+
+@media (max-width: 872px) {
+  .service-page-icon svg {
+    font-size: 200px;
+  }
+}
