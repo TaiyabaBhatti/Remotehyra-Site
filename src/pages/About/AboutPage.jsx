@@ -35,7 +35,7 @@ export default function AboutPage() {
     <>
       <section
         ref={sectionRef}
-        className={`relative w-full min-h-[calc(100vh-30px)]  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
+        className={`relative w-full  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
         `}
       >
         <HeroContainer

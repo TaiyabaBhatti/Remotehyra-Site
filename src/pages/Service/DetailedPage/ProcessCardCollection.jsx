@@ -1,5 +1,6 @@
 import React from "react";
 import ProcessCard from "./ProcessCard";
+import HighlightedCard from "./HighlightedCard";
 
 export default function ProcessCardCollection({ dataList }) {
   return (
@@ -15,10 +16,11 @@ export default function ProcessCardCollection({ dataList }) {
           {dataList &&
             dataList.map((content, index) => {
               return (
-                <ProcessCard
+                <HighlightedCard
                   key={index}
                   title={content.title}
                   desc={content.desc}
+                  icon={true}
                 />
               );
             })}
