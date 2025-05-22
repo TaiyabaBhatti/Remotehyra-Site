@@ -6,6 +6,7 @@ import PortfolioPage from "../pages/Portfolio/PortfolioPage";
 import ServicePage from "../pages/Service/ServicePage";
 import BlogPage from "../pages/Blog/BlogPage";
 import ServiceDetailedPage from "../pages/Service/DetailedPage/ServiceDetailedPage";
+import ProjectDetailedPage from "../pages/Portfolio/DetailedPage/ProjectDetailedPage";
 
 export default function PagesRoute({}) {
   return (
@@ -16,6 +17,10 @@ export default function PagesRoute({}) {
       <Route path="/services" element={<ServicePage />} />
       <Route path="/services/:serviceid" element={<ServiceDetailedPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
+      <Route
+        path="/portfolio/case-study/:projectid"
+        element={<ProjectDetailedPage />}
+      />
       <Route path="/blog" element={<BlogPage />} />
       <Route path="/contact-us" element={<ContactPage />} />
     </Routes>

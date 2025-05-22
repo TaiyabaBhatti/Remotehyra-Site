@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section
         ref={sectionRef}
         className={`relative w-full  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
-        `}
+        min-h-screen`}
       >
         <HeroContainer
           tagText="About Us"

@@ -9,7 +9,7 @@ export default function ServicePage() {
   return (
     <>
       <section
-        className={`relative w-full  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
+        className={`relative w-full  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 min-h-screen 
         `}
       >
         <HeroContainer
@@ -24,7 +24,7 @@ export default function ServicePage() {
       {/* Services grid */}
 
       <section className="relative overflow-hidden bg-darkbrown">
-        <Wrapper properties="max-w-6xl m-auto max-desktop-s4:max-w-4xl">
+        <Wrapper>
           <div className="grid grid-cols-2 gap-y-10 gap-x-12 max-md:grid-cols-1">
             {services.map((service, index) => {
               return (

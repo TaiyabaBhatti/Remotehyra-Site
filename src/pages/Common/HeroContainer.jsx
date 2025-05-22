@@ -5,7 +5,7 @@ import HeroHeadline from "./HeroHeadline";
 
 export default function HeroContainer({ tagText, title, desc, icon }) {
   return (
-    <Wrapper properties="min-h-screen max-w-6xl z-50  m-auto">
+    <Wrapper properties="max-w-6xl z-50  m-auto">
       <PageTag text={tagText} />
       <HeroHeadline title={title} desc={desc} icon={icon} />
     </Wrapper>

@@ -1,6 +1,5 @@
 import React from "react";
-import ProcessCard from "./ProcessCard";
-import HighlightedCard from "./HighlightedCard";
+import HighlightedCard from "../../Common/HighlightedCard";
 
 export default function ProcessCardCollection({ dataList }) {
   return (

@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import HeroContainer from "../../Common/HeroContainer";
 import Wrapper from "../../../components/ui/Wrapper";
 import Headline from "../../../components/ui/Headline";
-import BenefitCardCollection from "./BenefitCardCollection";
-import sideImg from "../../../assets/images/single-page-side-img.png";
+import BenefitCardCollection from "../../Common/CardCollection";
 import sideImg2 from "../../../assets/images/single-page-side-img-2.png";
 import SkillCardCollection from "./SkillCardCollection";
 import ProcessCardCollection from "./ProcessCardCollection";
@@ -23,7 +22,7 @@ export default function SingleServiceProduct() {
       {pageData && (
         <>
           <section
-            className={`relative w-full pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 
+            className={`relative w-full pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 min-h-screen 
         `}
           >
             <HeroContainer
@@ -40,15 +39,7 @@ export default function SingleServiceProduct() {
           <section className="bg-whiteshade">
             <Wrapper properties="max-w-6xl m-auto max-desktop-s4:max-w-4xl ">
               {/* Benefits */}
-              <div className="relative z-50 py-10 flex flex-row gap-x-10 items-center justify-between  max-tablet-s3:items-start max-md:flex-col-reverse">
-                <BenefitCardCollection dataList={pageData.data.benefitList} />
-
-                <img
-                  src={sideImg}
-                  alt=""
-                  className=" w-96 object-cover h-full max-md:hidden"
-                />
-              </div>
+              <BenefitCardCollection dataList={pageData.data.benefitList} />
 
               {/* Process */}
               <div className="mt-36 flex flex-row gap-x-16 items-center justify-between max-desktop-s4:flex-col gap-y-10 max-tablet-s3:items-start">
