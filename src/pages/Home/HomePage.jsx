@@ -31,7 +31,7 @@ export default function HomePage() {
           subtitle="Transforming businesses with cutting-edge AI technology"
         />
         <div
-          className={`relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 max-w-6xl max-desktop-lg3: m-auto h-full  mt-36`}
+          className={`relative grid grid-cols-3 max-desktop-lg3:grid-cols-2 max-md:grid-cols-1 max-md:gap-x-0  gap-x-10 gap-y-16 h-full  mt-36`}
         >
           {/* row-1 */}
 
@@ -136,7 +136,7 @@ export default function HomePage() {
       </Wrapper>
 
       {/* Featured section */}
-      <Wrapper propertie="">
+      <Wrapper>
         <Headline
           title="Our Latest AI Solutions"
           subtitle="Transforming businesses with cutting-edge AI technology"

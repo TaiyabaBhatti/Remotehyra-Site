@@ -11,7 +11,7 @@ import Wrapper from "../../components/ui/Wrapper";
 export default function OurRanking() {
   return (
     <section className="bg-darkbrown">
-      <Wrapper properties="max-w-6xl m-auto max-desktop-s4:max-w-4xl">
+      <Wrapper>
         <Headline
           title="Leading the market with unmatched results"
           classTitle="section-black"
