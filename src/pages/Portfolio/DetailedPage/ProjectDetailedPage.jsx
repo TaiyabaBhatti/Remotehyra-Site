@@ -37,8 +37,11 @@ export default function ProjectDetailedPage() {
             <Wrapper>
               <div className="flex flex-col items-center gap-y-10">
                 <ColoredBorderCard>
-                  <FcHighPriority className="text-7xl" />
-                  <div className="space-y-2.5 max-w-2xl">
+                  <div>
+                    <FcHighPriority className="text-7xl max-sm:text-5xl" />
+                  </div>
+
+                  <div className="space-y-2.5">
                     <h1 className="text-2xl text-white font-bold">
                       Challenges
                     </h1>
@@ -49,8 +52,11 @@ export default function ProjectDetailedPage() {
                 </ColoredBorderCard>
 
                 <ColoredBorderCard>
-                  <FcIdea className="text-7xl" />
-                  <div className="space-y-2.5 max-w-2xl">
+                  <div>
+                    <FcIdea className="text-7xl max-sm:text-5xl" />
+                  </div>
+
+                  <div className="space-y-2.5">
                     <h1 className="text-2xl text-white font-bold">Solutions</h1>
                     <p className="text-white">
                       {pageData.data.targetPair.solution}

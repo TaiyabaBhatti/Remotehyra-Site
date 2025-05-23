@@ -35,14 +35,12 @@ const projects = [
         "Memory management system",
       ],
 
-      do_will_pair: [
-        {
-          desc: "The client needed an intelligent system that could autonomously handle complex business processes, make decisions, and coordinate multiple tasks without constant human intervention.",
-        },
-        {
-          desc: "We implemented a hierarchical multi-agent architecture with specialized agents for different domains, coordinated by a central orchestrator using advanced planning and reasoning capabilities.",
-        },
-      ],
+      targetPair: {
+        challenge:
+          "The client needed an intelligent system that could autonomously handle complex business processes, make decisions, and coordinate multiple tasks without constant human intervention.",
+        solution:
+          "We implemented a hierarchical multi-agent architecture with specialized agents for different domains, coordinated by a central orchestrator using advanced planning and reasoning capabilities.",
+      },
     },
   },
   {
@@ -59,14 +57,13 @@ const projects = [
         "Real-time monitoring",
       ],
 
-      do_will_pair: [
-        {
-          desc: "The client needed to automate complex manufacturing processes while maintaining quality control and reducing human error in critical operations",
-        },
-        {
-          desc: "We created an integrated automation platform combining computer vision, natural language processing, and robotic process automation with intelligent decision-making capabilities.",
-        },
-      ],
+      targetPair: {
+        challenge:
+          "The client needed to automate complex manufacturing processes while maintaining quality control and reducing human error in critical operations",
+
+        solution:
+          "We created an integrated automation platform combining computer vision, natural language processing, and robotic process automation with intelligent decision-making capabilities.",
+      },
     },
   },
   {
@@ -84,14 +81,13 @@ const projects = [
         "Analytics dashboard",
       ],
 
-      do_will_pair: [
-        {
-          desc: "The client required a sophisticated customer service solution that could handle complex queries, maintain context, and seamlessly integrate with existing systems.",
-        },
-        {
-          desc: "We built a context-aware chatbot platform using advanced LLMs with custom knowledge integration and intelligent routing capabilities.",
-        },
-      ],
+      targetPair: {
+        challenge:
+          "The client required a sophisticated customer service solution that could handle complex queries, maintain context, and seamlessly integrate with existing systems.",
+
+        solution:
+          "We built a context-aware chatbot platform using advanced LLMs with custom knowledge integration and intelligent routing capabilities.",
+      },
     },
   },
   {
@@ -108,14 +104,13 @@ const projects = [
         "Audit logging",
       ],
 
-      do_will_pair: [
-        {
-          desc: "The client needed a specialized AI model that could understand medical terminology, comply with healthcare regulations, and maintain patient privacy.",
-        },
-        {
-          desc: "We implemented a custom LLM architecture with domain-specific training, enhanced security features, and HIPAA-compliant infrastructure.",
-        },
-      ],
+      targetPair: {
+        challenge:
+          "The client needed a specialized AI model that could understand medical terminology, comply with healthcare regulations, and maintain patient privacy.",
+
+        solution:
+          "We implemented a custom LLM architecture with domain-specific training, enhanced security features, and HIPAA-compliant infrastructure.",
+      },
     },
   },
   {
@@ -132,14 +127,13 @@ const projects = [
         "Automated summarization",
       ],
 
-      do_will_pair: [
-        {
-          desc: "The client needed to efficiently process millions of legal documents, extract relevant information, and provide accurate search results while maintaining document relationships.",
-        },
-        {
-          desc: "We developed a comprehensive knowledge mining system combining advanced NLP, graph databases, and semantic search capabilities.",
-        },
-      ],
+      targetPair: {
+        challenge:
+          "The client needed to efficiently process millions of legal documents, extract relevant information, and provide accurate search results while maintaining document relationships.",
+
+        solution:
+          "We developed a comprehensive knowledge mining system combining advanced NLP, graph databases, and semantic search capabilities.",
+      },
     },
   },
 ];

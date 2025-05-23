@@ -34,7 +34,7 @@ export default function PortfolioPage() {
       {/* Projects case study cards */}
       <section className="relative bg-darkbrown">
         <Wrapper>
-          <div className="grid grid-cols-3 gap-y-10 gap-x-12 max-desktop-s4:grid-cols-2">
+          <div className="grid grid-cols-3 gap-y-10 gap-x-12 max-desktop-s4:grid-cols-2 max-xsm:grid-cols-1 max-xsm:justify-items-center">
             {projects.map((project) => {
               return (
                 <ProjectCard
