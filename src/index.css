@@ -84,7 +84,7 @@ card description: .sub-desc
 }
 
 .section-black {
-  background-color: var(--color-darkbrown);
+  /* background-color: var(--color-darkbrown); */
 }
 
 .section-black h1 {
@@ -107,25 +107,52 @@ card description: .sub-desc
   font-size: 24px;
 }
 
-/* .swiper-pagination {
-    background-color: black;
-  } */
-.swiper-pagination {
+#home-carousel .swiper-pagination {
   width: fit-content !important;
   left: 50px !important;
 }
 
+#blog-carousel .swiper-wrapper {
+  align-content: flex-start !important;
+}
+#blog-carousel .swiper-pagination {
+  width: fit-content !important;
+}
+
+#blog-carousel .swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-content: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  opacity: 1;
+  background: var(--color-paratextColor);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+#blog-carousel .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
 @media (max-width: 1032px) {
-  .swiper-pagination {
+  #home-carousel .swiper-pagination {
     left: 400px !important;
   }
 }
 
 @media (max-width: 950px) {
-  .swiper-pagination {
+  #home-carousel .swiper-pagination {
     left: calc(50% - 10px) !important;
   }
-  .section-home-carousel {
+  #home-carousel .section-home-carousel {
     margin-bottom: 20px;
   }
 }

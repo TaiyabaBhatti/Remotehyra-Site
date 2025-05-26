@@ -15,7 +15,6 @@ export default function HeroHeadline({
         <h1 className="capitalize heading text-7xl max-tablet-s3:text-5xl  max-w-5xl leading-20 max-tablet-s3:leading-16 max-mobile-s3:leading-10   text-drakbrown font-semibold heading">
           {title}.
         </h1>
-
         {icon ? (
           <div className="flex flex-row justify-between items-center gap-x-10 max-sm:flex-col-reverse max-sm:items-start max-sm:gap-y-12 ">
             <div className="service-page-icon max-sm:m-auto">{icon}</div>

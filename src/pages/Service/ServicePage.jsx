@@ -8,18 +8,11 @@ import sideImage from "../../assets/images/service-side-img.png";
 export default function ServicePage() {
   return (
     <>
-      <section
-        className={`relative w-full  pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 min-h-screen 
-        `}
-      >
-        <HeroContainer
-          tagText="our Services"
-          title="AI you can trust, built for scale and security"
-          desc="Cutting-edge AI solutions tailored to your business needs, AI agent resolves 60%+ of the issues Airtable users throw its way and is improving every day. It has been really impressive."
-        />
-
-        {/* Hero section bg effect */}
-      </section>
+      <HeroContainer
+        tagText="our Services"
+        title="AI you can trust, built for scale and security"
+        desc="Cutting-edge AI solutions tailored to your business needs, AI agent resolves 60%+ of the issues Airtable users throw its way and is improving every day. It has been really impressive."
+      />
 
       {/* Services grid */}
 

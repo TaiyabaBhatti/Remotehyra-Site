@@ -20,6 +20,7 @@ export default function ExpertiseSection() {
             <div className="">
               <img
                 src={sideImage}
+                data-aos="zoom-in"
                 alt=""
                 className="w-[570px] h-[440px] object-contain  max-desktop-s4:h-[380px]"
               />

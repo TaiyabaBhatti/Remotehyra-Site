@@ -151,6 +151,7 @@ export default function HomePage() {
         subtitle="Let's discuss how we can help you achieve your business goals with our cutting-edge technology solutions."
         screenWidth="max-desktop-s3"
         classTitle="section-black"
+        bgColor="bg-darkbrown"
         btnDecor="bg-darkbrown text-white border-[1px] hover:bg-white hover:text-black"
         btnText="Get Started"
         src={sideImg}

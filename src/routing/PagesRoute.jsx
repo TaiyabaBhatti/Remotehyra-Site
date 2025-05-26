@@ -7,6 +7,7 @@ import ServicePage from "../pages/Service/ServicePage";
 import BlogPage from "../pages/Blog/BlogPage";
 import ServiceDetailedPage from "../pages/Service/DetailedPage/ServiceDetailedPage";
 import ProjectDetailedPage from "../pages/Portfolio/DetailedPage/ProjectDetailedPage";
+import BlogDetailedPage from "../pages/Blog/DetailedPage/BlogDetailedPage";
 
 export default function PagesRoute({}) {
   return (
@@ -22,6 +23,7 @@ export default function PagesRoute({}) {
         element={<ProjectDetailedPage />}
       />
       <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blog/:blogid" element={<BlogDetailedPage />} />
       <Route path="/contact-us" element={<ContactPage />} />
     </Routes>
   );

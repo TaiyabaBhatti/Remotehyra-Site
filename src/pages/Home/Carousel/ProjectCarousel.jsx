@@ -20,7 +20,7 @@ export default function ProjectCarousel() {
       >
         {projects.map((project, index) => {
           return (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} id="home-carousel">
               <div className="flex mb-10 flex-row justify-center  gap-x-5  gap-y-10 items-center max-md:flex-col-reverse max-md:items-start">
                 <ContentLayout
                   title={project.title}
