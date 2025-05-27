@@ -49,7 +49,12 @@ export default function Header({}) {
       <section className="relative z-50">
         <header
           id="navbar"
-          className={`h-28  z-50 ${theme ? "bg-whiteshade" : "bg-white"}`}
+          className={`h-28  z-50 
+          
+          ${theme ? "bg-whiteshade" : "bg-white"}
+          
+          
+          `}
         >
           <div className="same-spacing flex flex-row items-center justify-between py-6 h-full px-7 max-w-6xl m-auto   max-desktop-s4:max-w-4xl">
             <div className="flex flex-row items-center   w-full gap-x-10    justify-between">
