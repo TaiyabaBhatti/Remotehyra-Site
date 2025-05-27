@@ -12,7 +12,7 @@ export default function ContactPage() {
         <section className="flex flex-row justify-between gap-20 max-desktop-s5:flex-col">
           {/* Contact section heading col-1*/}
 
-          <section data-aos="fade-up" className="space-y-10">
+          <section data-aos="fade-up" className="space-y-20">
             <div className="">
               <PageTag text="Contact Us" />
               <h1 className="heading text-white text-4xl font-bold mt-7 mb-5">
@@ -26,7 +26,7 @@ export default function ContactPage() {
             <div className="flex flex-row gap-5 items-start">
               <FcDepartment className="text-2xl bg-violet-500 size-10 rounded-full p-2 max-mobile-s3:size-8 max-mobile-s3:text-lg" />
               <div className="text-hoverGray">
-                <h5 className="sub-title capitalize text-2xl text-violet-500 mb-3">
+                <h5 className="sub-title capitalize text-lg text-violet-500 mb-3">
                   united kingdom
                 </h5>
                 <p>60 Carlisle Road, Bradford</p>
