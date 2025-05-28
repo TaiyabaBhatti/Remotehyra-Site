@@ -1,6 +1,6 @@
 import project_1 from "../assets/images/featured-img-1.jpg";
 import project_2 from "../assets/images/featured-img-2.jpg";
-import project_3 from "../assets/images/featured-img-3.png";
+import project_3 from "../assets/images/featured-img-3.jpg";
 
 const projects = [
   {

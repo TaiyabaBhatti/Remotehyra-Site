@@ -21,8 +21,9 @@ export default function HeroContainer({
         {animateElement && (
           <img
             data-aos="fade-right"
+            loading="lazy"
             src={animateElement}
-            alt=""
+            alt={`decorative piece for visual appealing`}
             className={`max-tablet-s3:hidden absolute bottom-24 -z-10 left-20 object-cover w-72 blur-xs transition-transform duration-1000 ease-out
        `}
           />

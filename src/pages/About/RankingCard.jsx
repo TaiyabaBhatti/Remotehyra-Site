@@ -1,5 +1,4 @@
 import React from "react";
-import Lottie from "react-lottie";
 
 export default function RankingCard({ title, numeric, icon }) {
   return (
@@ -11,8 +10,9 @@ export default function RankingCard({ title, numeric, icon }) {
         </h1>
 
         <img
+          loading="lazy"
           src={icon}
-          alt=""
+          alt={`ranking analysis of ${title}`}
           className="h-20 max-md:h-14 object-cover mt-10"
         />
       </div>

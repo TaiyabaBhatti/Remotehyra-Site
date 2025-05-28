@@ -1,6 +1,7 @@
 import React from "react";
-import Tag from "../../components/ui/Tag";
-import image from "../../assets/images/demo.png";
+import Tag from "../../../components/ui/Tag";
+
+import image from "../../../assets/images/demo.png";
 import { Link } from "react-router-dom";
 
 export default function BlogCard({ data, path }) {
@@ -9,8 +10,9 @@ export default function BlogCard({ data, path }) {
       <Link to={path}>
         <article className="bg-white rounded-md ">
           <img
+            loading="lazy"
             src={image}
-            alt=""
+            alt={`blog of ${data.title}`}
             className="rounded-t-md h-54 w-full object-cover"
           />
           <div className="space-y-3 p-5">

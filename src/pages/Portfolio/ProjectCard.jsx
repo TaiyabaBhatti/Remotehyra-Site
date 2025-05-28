@@ -25,7 +25,7 @@ export default function ProjectCard({ title, path, tag }) {
           </div>
 
           <img
-            alt=""
+            alt={`project thumbnail of ${tag}`}
             className="absolute top-0 left-0 rounded-3xl h-fit -z-10 object-cover"
           />
         </div>

@@ -40,7 +40,7 @@ export default function SectionContent({
             <img
               src={src}
               alt=""
-              className="max-h-[550px] min-h-[500px] ml-auto relative z-50 w-2xl object-cover max-tablet-lg2:rotate-30   max-tablet-lg2:w-full max-sm:min-h-36
+              className="max-h-[550px] min-h-[500px] ml-auto relative w-2xl object-cover max-tablet-lg2:rotate-30   max-tablet-lg2:w-full max-sm:min-h-36
   "
             />
           ) : (
@@ -63,8 +63,9 @@ export default function SectionContent({
       </div>
 
       <img
+        loading="lazy"
         src={bgPattern}
-        alt=""
+        alt="Decorative vector images for visual appealing"
         className="absolute  -bottom-20 max-w-2xl    left-0  -z-20 max-tablet-lg2:hidden"
       />
     </div>

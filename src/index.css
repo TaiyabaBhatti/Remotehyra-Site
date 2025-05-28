@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  padding-top: 112px;
+}
+
 @theme {
   --breakpoint-desktop-s1: 1024px;
   --breakpoint-desktop-s2: 1032px;
@@ -223,4 +227,7 @@ background-image: linear-gradient();
   .service-page-icon svg {
     font-size: 200px;
   }
+}
+
+.scrolled-down {
 }

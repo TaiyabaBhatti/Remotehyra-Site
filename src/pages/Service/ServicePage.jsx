@@ -3,7 +3,6 @@ import HeroContainer from "../Common/HeroContainer";
 import Wrapper from "../../components/ui/Wrapper";
 import services from "../../data/serviceDetailedData";
 import ServiceCard from "./ServiceCard";
-import sideImage from "../../assets/images/service-side-img.png";
 
 export default function ServicePage() {
   return (

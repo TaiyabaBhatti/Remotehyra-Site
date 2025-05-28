@@ -4,8 +4,8 @@ import ExpertiseSection from "./ExpertiseSection";
 import Headline from "../../components/ui/Headline";
 import SectionContent from "./SectionContent";
 import SolutionCards from "./SolutionCards";
-import frontCover from "../../assets/images/bg-pattern-3.png";
-import sideImg from "../../assets/images/tech-people-3.png";
+import frontCover from "../../assets/images/home-side-img-1.png";
+import sideCover from "../../assets/images/home-side-img-2.png";
 
 export default function HomePage() {
   return (
@@ -154,7 +154,7 @@ export default function HomePage() {
         bgColor="bg-darkbrown"
         btnDecor="bg-darkbrown text-white border-[1px] hover:bg-white hover:text-black"
         btnText="Get Started"
-        src={sideImg}
+        src={sideCover}
       />
     </>
   );

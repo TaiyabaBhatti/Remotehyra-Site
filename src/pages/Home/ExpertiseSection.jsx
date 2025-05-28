@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../../components/ui/Wrapper";
 import Button from "../../components/ui/Button";
 import ContentLayout from "./ContentLayout";
-import sideImage from "../../assets/images/expertise_side_img.png";
+import sideImage from "../../assets/images/home-side-img-3.png";
 import ExpertiseCard from "./ExpertiseCard";
 
 export default function ExpertiseSection() {
@@ -19,9 +19,10 @@ export default function ExpertiseSection() {
 
             <div className="">
               <img
+                loading="lazy"
                 src={sideImage}
                 data-aos="zoom-in"
-                alt=""
+                alt="Decorative image for visual appealing"
                 className="w-[570px] h-[440px] object-contain  max-desktop-s4:h-[380px]"
               />
             </div>

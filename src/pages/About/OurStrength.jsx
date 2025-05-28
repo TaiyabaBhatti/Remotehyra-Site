@@ -28,8 +28,9 @@ export default function OurStrength() {
           </div>
           <div className="max-md:w-full">
             <img
+              loading="lazy"
               src={SideImage}
-              alt=""
+              alt="Business people working and talking about strengths of company"
               className="w-96 max-tablet-lg1:w-80 object-cover rounded-3xl max-md:w-full max-md:h-56"
             />
           </div>

@@ -41,7 +41,7 @@ export default function ContactPage() {
             data-aos="fade-left"
             className="rounded-2xl p-2 bg-gradient-to-tr from-darkbrown from-60% via-darkbrown via-20% to-violet-500 shadow-lg min-w-[550px] max-sm:min-w-72"
           >
-            <div className="bg-darkbrown h-full rounded-2xl p-8 space-y-14 w-full max-mobile-s3:space-y-7">
+            <div className="bg-darkbrown h-full rounded-2xl p-8 max-mobile-s3:pl-1 space-y-14 w-full max-mobile-s3:space-y-7">
               <h1 className="text-paratextColor text-2xl max-mobile-s3:text-lg font-semibold ">
                 Your Details Here:
               </h1>

@@ -23,7 +23,7 @@ export default function CardCollection({ dataList, tag }) {
 
         <img
           src={sideImg}
-          alt=""
+          alt="a decorative piece for visual appealing"
           className=" w-96 object-cover h-full max-md:hidden"
         />
       </div>

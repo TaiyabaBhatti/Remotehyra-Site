@@ -3,7 +3,7 @@ import TabLink from "./ui/TabLink";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import LogoBox from "./ui/LogoBox";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Menu from "./ui/Menu";
 
 export default function Header({}) {
@@ -12,6 +12,29 @@ export default function Header({}) {
   const [toggle, settoggle] = useState(false);
   const [theme, setTheme] = useState(true);
   const currentLocation = useLocation();
+
+  const [topDistance, setTopDistance] = useState(0);
+  const prevScrollPos = useRef(0);
+
+  useEffect(() => {
+    const handleNavbar = () => {
+      const header = document.getElementById("navbar");
+      const currentScrollPos = window.scrollY;
+
+      if (prevScrollPos.current > currentScrollPos) {
+        header.classList.remove("scrolled-down");
+      } else if (currentScrollPos > header.offsetHeight + 20) {
+        header.classList.add("scrolled-down");
+      }
+
+      prevScrollPos.current = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleNavbar);
+    return () => {
+      window.removeEventListener("scroll", handleNavbar);
+    };
+  }, []);
 
   useEffect(() => {
     if (
@@ -30,7 +53,6 @@ export default function Header({}) {
     };
 
     window.addEventListener("resize", handleSideMenuResize);
-
     return () => {
       window.removeEventListener("resize", handleSideMenuResize);
     };
@@ -43,17 +65,17 @@ export default function Header({}) {
       settoggle(true);
     }
   };
+  //
 
   return (
     <>
-      <section className="relative z-50">
+      <section
+        id="navbar"
+        className="fixed top-0 left-0 w-full z-50 shadow-[0_10px_35px_rgba(0,0,0,0.25)]"
+      >
         <header
-          id="navbar"
           className={`h-28  z-50 
-          
           ${theme ? "bg-whiteshade" : "bg-white"}
-          
-          
           `}
         >
           <div className="same-spacing flex flex-row items-center justify-between py-6 h-full px-7 max-w-6xl m-auto   max-desktop-s4:max-w-4xl">
@@ -65,7 +87,7 @@ export default function Header({}) {
               />
 
               <div className=" flex flex-row gap-x-10 max-tablet-lg1:gap-x-4 font-semibold items-center">
-                <nav className=" text-black flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
+                <nav className="flex max-tablet-lg1:hidden flex-row items-center gap-x-5">
                   <TabLink text="Home" path="/home" />
                   <TabLink text="Services" path="/services" />
                   <TabLink text="Portfolio" path="portfolio" />

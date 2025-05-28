@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import { blogPost } from "../../../data/blogPostData";
-import BlogCard from "../BlogCard";
+import BlogCard from "./BlogCard";
 
 export default function BlogPostCarousel() {
   const pagination = {
