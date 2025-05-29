@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MenuItems from "./MenuItems";
+import { useLocation } from "react-router-dom";
 
 export default function Menu({ toggleStatus }) {
+  const [theme, setTheme] = useState(true);
+  const currentLocation = useLocation();
+
+  useEffect(() => {
+    if (
+      currentLocation.pathname === "/" ||
+      currentLocation.pathname === "/home"
+    ) {
+      setTheme(false);
+    } else {
+      setTheme(true);
+    }
+  }, [currentLocation.pathname, theme]);
+
   return (
     <div
       className={` 
@@ -9,7 +24,7 @@ export default function Menu({ toggleStatus }) {
         
         side-menu
         h-screen
-        bg-white w-full
+        ${theme ? "bg-whiteshade" : "bg-white"} w-full
     
      `}
     >
