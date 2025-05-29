@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import InputBlock from "./InputBlock";
 import SubmitButton from "./SubmitButton";
 import MessageInput from "./MessageInput";
+import emailjs from "@emailjs/browser";
+import { NotificationPopup } from "../../Notification/NotificationPopup";
 
 export default function ContactForm() {
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const submitForm = () => {};
+  const submitForm = () => {
+    NotificationPopup("Form Submitted, Successfully", "success");
+    setIsLoading(true);
+    form.current.reset();
+  };
 
   return (
     <>
       <form
+        ref={form}
         onSubmit={handleSubmit(submitForm)}
         className="flex flex-col gap-6 w-full"
       >
@@ -59,7 +69,7 @@ export default function ContactForm() {
         />
         <MessageInput name="message" register={register} error={errors} />
 
-        <SubmitButton text="Send Message" />
+        <SubmitButton text="Send Message" loading={isLoading} />
       </form>
     </>
   );

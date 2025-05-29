@@ -8,7 +8,7 @@ export default function BlogContent() {
         <h1 className="text-center text-3xl font-bold text-darkbrown bg-gray-100 py-7 px-1.5 rounded-sm">
           What is Retrieval-Augmented Generation?
         </h1>
-        <p className="text-lg text-hoverGray font-semibold">
+        <p className="text-lg text-hoverGray font-semibold max-mobile-s2:text-base">
           Retrieval-Augmented Generation (RAG) is a hybrid approach that
           combines information retrieval with generative models. This method
           allows AI systems to access real-time, external knowledge bases while
@@ -22,7 +22,7 @@ export default function BlogContent() {
 
       {/* Key features */}
       <div className="space-y-4" data-aos="fade-up">
-        <h3 className="text-lg font-bold text-darkbrown">
+        <h3 className="text-lg font-bold text-darkbrown bg-gray-100 py-2 px-1.5 rounded-sm">
           Key Features of RAG
         </h3>
         <ul className="space-y-2">
@@ -55,7 +55,7 @@ export default function BlogContent() {
 
       {/* Key applications */}
       <div className="space-y-4" data-aos="fade-up">
-        <h3 className="text-lg font-bold text-darkbrown">
+        <h3 className="text-lg font-bold text-darkbrown bg-gray-100 py-2 px-1.5 rounded-sm">
           Applications of RAG
         </h3>
         <ul className="space-y-2">
@@ -83,7 +83,9 @@ export default function BlogContent() {
 
       {/* Future */}
       <div className="space-y-4" data-aos="fade-up">
-        <h3 className="text-lg font-bold text-darkbrown">Future Directions</h3>
+        <h3 className="text-lg font-bold text-darkbrown bg-gray-100 py-2 px-1.5 rounded-sm">
+          Future Directions
+        </h3>
         <ul className="space-y-2">
           <li>
             <p className="text-hoverGray">
@@ -112,8 +114,10 @@ export default function BlogContent() {
       {/* Conclusion */}
 
       <div className="space-y-2" data-aos="fade-up">
-        <h1 className="text-2xl font-bold text-darkbrown">Conclusion</h1>
-        <p className="text-hoverGray text-lg font-semibold">
+        <h1 className="text-2xl font-bold text-darkbrown  bg-gray-100 py-2 px-1.5 rounded-sm">
+          Conclusion
+        </h1>
+        <p className="text-hoverGray text-lg font-semibold max-mobile-s2:text-base">
           Retrieval-Augmented Generation represents a significant leap forward
           in how AI systems interact with vast knowledge bases. By integrating
           dynamic retrieval with generative capabilities, RAG not only enhances

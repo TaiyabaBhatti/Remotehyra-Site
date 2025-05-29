@@ -23,7 +23,7 @@ export default function BlogHeroContainer({ title, date, tag, writer }) {
           <img
             src={image}
             alt=""
-            className="rounded-md h-96 object-cover min-w-80  max-md:w-full max-md:h-52"
+            className="rounded-md h-96 object-cover min-w-80  max-md:w-full max-md:min-w-full max-md:h-52"
           />
         </div>
       </Wrapper>

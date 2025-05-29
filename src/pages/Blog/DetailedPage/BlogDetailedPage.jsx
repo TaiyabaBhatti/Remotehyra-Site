@@ -28,7 +28,7 @@ export default function BlogDetailedPage() {
 
           <section>
             <Wrapper>
-              <article className="space-y-10 shadow-gray-300 rounded-md overflow-y-hidden shadow-2xl p-8">
+              <article className="space-y-10 shadow-gray-300 rounded-md overflow-y-hidden shadow-2xl px-8 py-16 max-mobile-s2:px-2">
                 <BlogContent />
               </article>
             </Wrapper>
