@@ -44,11 +44,8 @@ export default function Footer({}) {
 
         <div className="flex flex-row gap-x-8  items-start flex-wrap">
           <PolicyLink text="Contact" path="/contact-us" />
-          <PolicyLink text="FAQ" path="/" />
-          <PolicyLink text="Careers" path="/" />
-          <PolicyLink text="Partners" path="/" />
-          <PolicyLink text="Integrations" path="/" />
-          <PolicyLink text="Security" path="/" />
+          <PolicyLink text="About" path="/about" />
+          <PolicyLink text="Portfolio" path="/portfolio" />
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ export default function HeroContainer({
 }) {
   return (
     <>
-      <section className="relative overflow-hidden w-full  pt-12 max-md:pt-0 bg-whiteshade -z-50 min-h-screen ">
+      <section className="relative z-30 overflow-hidden w-full  pt-12 max-md:pt-0 bg-whiteshade  min-h-screen ">
         <Wrapper animate="fade-up">
           <PageTag text={tagText} />
           <HeroHeadline title={title} desc={desc} icon={icon} />

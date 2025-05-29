@@ -6,7 +6,7 @@ export default function ProjectCard({ title, path, tag }) {
     <>
       <div className="bg-gradient-to-r from-pink-500 to-violet-500 p-[1px] rounded-3xl  min-h-80 max-xsm:w-64">
         <div
-          className="relative z-50 group flex flex-row gap-x-5 h-full  rounded-3xl   
+          className="relative group flex flex-row gap-x-5 h-full  rounded-3xl   
    opacity-95 bg-darkbrown"
         >
           <div
@@ -25,7 +25,7 @@ export default function ProjectCard({ title, path, tag }) {
           </div>
 
           <img
-            alt={`project thumbnail of ${tag}`}
+            // alt={`project thumbnail of ${tag}`}
             className="absolute top-0 left-0 rounded-3xl h-fit -z-10 object-cover"
           />
         </div>

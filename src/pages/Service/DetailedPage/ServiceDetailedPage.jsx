@@ -22,7 +22,7 @@ export default function SingleServiceProduct() {
       {pageData && (
         <>
           <section
-            className={`relative w-full pt-12 max-md:pt-0 overflow-hidden bg-whiteshade -z-50 min-h-screen 
+            className={`relative w-full pt-12 max-md:pt-0 overflow-hidden bg-whiteshade  min-h-screen 
         `}
           >
             <HeroContainer

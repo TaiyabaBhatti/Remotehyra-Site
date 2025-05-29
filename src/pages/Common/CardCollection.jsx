@@ -5,7 +5,7 @@ import sideImg from "../../assets/images/single-page-side-img.png";
 export default function CardCollection({ dataList, tag }) {
   return (
     <>
-      <div className="relative z-50 py-10 flex flex-row gap-x-10 items-center justify-between  max-tablet-s3:items-start max-md:flex-col-reverse">
+      <div className="relative py-10 flex flex-row gap-x-10 items-center justify-between  max-tablet-s3:items-start max-md:flex-col-reverse">
         <div className="space-y-10  min-w-96 max-md:min-w-full max-md:w-full">
           <div>
             <h1 className="text-3xl font-bold bg-gradient-to-t from-pink-500 to-violet-500  bg-clip-text  text-transparent ">
