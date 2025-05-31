@@ -1,7 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
 import { projects } from "../../../data/homePageData";
 import ContentLayout from "../ContentLayout";
 import Tag from "../../../components/ui/Tag";
@@ -11,8 +17,9 @@ export default function ProjectCarousel() {
     <>
       <Swiper
         className="max-w-6xl !flex flex-row  justify-between items-center gap-10 mt-20"
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         navigation={false}
+        autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         effect={"flip"}
         grabCursor={false}

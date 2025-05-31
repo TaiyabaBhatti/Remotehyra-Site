@@ -1,5 +1,5 @@
 import React from "react";
-import SideImage from "../../assets/images/about-side-img.jpg";
+import SideImage from "../../assets/images/about-side-img.webp";
 import Wrapper from "../../components/ui/Wrapper";
 import StrengthCard from "./StrengthCard";
 

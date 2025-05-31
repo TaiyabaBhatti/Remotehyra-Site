@@ -3,7 +3,7 @@ import HeroContainer from "../../Common/HeroContainer";
 import Wrapper from "../../../components/ui/Wrapper";
 import Headline from "../../../components/ui/Headline";
 import BenefitCardCollection from "../../Common/CardCollection";
-import sideImg2 from "../../../assets/images/single-page-side-img-2.png";
+import sideImg2 from "../../../assets/images/single-page-side-img-2.webp";
 import SkillCardCollection from "./SkillCardCollection";
 import ProcessCardCollection from "./ProcessCardCollection";
 import services from "../../../data/serviceDetailedData";

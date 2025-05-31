@@ -1,7 +1,7 @@
 import React from "react";
 import Tag from "../../../components/ui/Tag";
 
-import image from "../../../assets/images/demo.png";
+import image from "../../../assets/images/demo.webp";
 import { Link } from "react-router-dom";
 
 export default function BlogCard({ data, path }) {

@@ -4,28 +4,75 @@ import ExpertiseSection from "./ExpertiseSection";
 import Headline from "../../components/ui/Headline";
 import SectionContent from "./SectionContent";
 import SolutionCards from "./SolutionCards";
-import frontCover from "../../assets/images/home-side-img-1.png";
-import sideCover from "../../assets/images/home-side-img-2.png";
+import bgImage from "../../assets/images/home-bg-2.webp";
+import Button from "../../components/ui/Button";
+import { useEffect, useRef, useState } from "react";
 
 export default function HomePage() {
+  const sectionRef = useRef();
+  const [scrollStatus, setScrollStatus] = useState(false);
+
+  useEffect(() => {
+    const scrollFunc = () => {
+      const section = sectionRef.current;
+      const visibleWindowHeight = window.innerHeight;
+
+      const sectionViewPortPara = section.getBoundingClientRect();
+      const sectionBottom = sectionViewPortPara.bottom;
+
+      if (sectionBottom <= window.innerHeight - 400) {
+        setScrollStatus(true);
+      } else {
+        setScrollStatus(false);
+      }
+      console.log("section top", section.offsetTop);
+      console.log("section top", section.getBoundingClientRect().y);
+    };
+
+    window.addEventListener("scroll", scrollFunc);
+
+    return () => {
+      window.removeEventListener("scroll", scrollFunc);
+    };
+  }, [scrollStatus]);
+
   return (
     <>
       {/* Hero section */}
-      <SectionContent
-        title=" Empowering Businesses with AI Solutions"
-        subtitle=" Transform your business with our innovative AI-driven solutions."
-        classTitle="section-white"
-        uniqueTitle="hero"
-        btnText="Explore now"
-        btnDecor="bg-gradient-to-r from-pink-500 to-violet-500  text-white"
-        src={frontCover}
-      />
+
+      <section
+        ref={sectionRef}
+        className="relative min-h-[calc(100vh-112px)] flex items-center overflow-hidden  gap-x-10"
+      >
+        <section className="flex-1">
+          <SectionContent
+            title=" Empowering Businesses with AI Solutions"
+            desc=" Transform your business with our innovative AI-driven solutions."
+            classTitle="section-white"
+            btnText="Explore now"
+            btnDecor="bg-gradient-to-r from-pink-500 to-violet-500  text-white"
+            properties="max-tablet-s3:items-center"
+          />
+        </section>
+        <img src={bgImage} alt="" className="max-tablet-s3:hidden" />
+
+        <div
+          className={`absolute w-full h-full z-40 transition-transform ease-out duration-500 bottom-0 left-0 
+          
+
+        ${
+          scrollStatus
+            ? "bg-gradient-to-t from-pink-500 to-violet-500 translate-y-0"
+            : "translate-y-full"
+        }`}
+        ></div>
+      </section>
 
       {/* Experties */}
       <ExpertiseSection />
 
       {/* AI solutions  */}
-      <Wrapper>
+      <Wrapper properties="pt-24">
         <Headline
           title="AI Solutions We Build"
           subtitle="Transforming businesses with cutting-edge AI technology"
@@ -136,7 +183,7 @@ export default function HomePage() {
       </Wrapper>
 
       {/* Featured section */}
-      <Wrapper>
+      <Wrapper properties="pt-24">
         <Headline
           title="Our Latest AI Solutions"
           subtitle="Transforming businesses with cutting-edge AI technology"
@@ -145,17 +192,18 @@ export default function HomePage() {
       </Wrapper>
 
       {/* Get in Touch */}
-      <SectionContent
-        title="Ready to Transform Your Business with
-        AI Solutions?"
-        subtitle="Let's discuss how we can help you achieve your business goals with our cutting-edge technology solutions."
-        screenWidth="max-desktop-s3"
-        classTitle="section-black"
-        bgColor="bg-darkbrown"
-        btnDecor="bg-darkbrown text-white border-[1px] hover:bg-white hover:text-black"
-        btnText="Get Started"
-        src={sideCover}
-      />
+
+      <section className="bg-darkbrown ">
+        <SectionContent
+          title="Ready to Transform Your Business with AI Solutions?"
+          desc="Let's discuss how we can help you achieve your business goals with our
+          cutting-edge technology solutions."
+          btnDecor="bg-darkbrown text-white border-[1px] hover:bg-white hover:text-black"
+          btnText="get started"
+          classTitle="section-black"
+          center={true}
+        />
+      </section>
     </>
   );
 }

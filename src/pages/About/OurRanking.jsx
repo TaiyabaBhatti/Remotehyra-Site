@@ -2,10 +2,10 @@ import React from "react";
 import Headline from "../../components/ui/Headline";
 import RankingCard from "./RankingCard";
 
-import static1 from "../../assets/lottie/about-card-1.png";
-import static2 from "../../assets/lottie/about-card-2.png";
-import static3 from "../../assets/lottie/about-card-3.png";
-import static4 from "../../assets/lottie/about-card-4.png";
+import static1 from "../../assets/favicon/about-card-1.ico";
+import static2 from "../../assets/favicon/about-card-2.ico";
+import static3 from "../../assets/favicon/about-card-3.ico";
+import static4 from "../../assets/favicon/about-card-4.ico";
 import Wrapper from "../../components/ui/Wrapper";
 
 export default function OurRanking() {

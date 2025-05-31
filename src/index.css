@@ -30,6 +30,7 @@ body {
   --breakpoint-mobile-s2: 524px;
   --breakpoint-mobile-s3: 407px;
   --breakpoint-mobile-s4: 360px;
+  --breakpoint-mobile-s5: 430px;
 
   --breakpoint-xsm: 550px;
 
@@ -60,7 +61,7 @@ card description: .sub-desc
 
 */
 
-@media (max-width: 405px) {
+@media (max-width: 428px) {
   body .heading {
     font-size: 2rem !important;
   }

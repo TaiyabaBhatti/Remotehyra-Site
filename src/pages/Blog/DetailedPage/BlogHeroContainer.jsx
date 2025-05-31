@@ -1,7 +1,7 @@
 import React from "react";
 import PageTag from "../../Common/PageTag";
 import Wrapper from "../../../components/ui/Wrapper";
-import image from "../../../assets/images/demo.png";
+import image from "../../../assets/images/demo.webp";
 import Tag from "../../../components/ui/Tag";
 
 export default function BlogHeroContainer({ title, date, tag, writer }) {

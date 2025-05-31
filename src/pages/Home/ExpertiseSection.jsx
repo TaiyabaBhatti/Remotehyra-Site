@@ -2,12 +2,12 @@ import React from "react";
 import Wrapper from "../../components/ui/Wrapper";
 import Button from "../../components/ui/Button";
 import ContentLayout from "./ContentLayout";
-import sideImage from "../../assets/images/home-side-img-3.png";
+import sideImage from "../../assets/images/home-side-img-3.webp";
 import ExpertiseCard from "./ExpertiseCard";
 
 export default function ExpertiseSection() {
   return (
-    <section className="bg-darkbrown">
+    <section className="bg-darkbrown pt-24">
       <Wrapper>
         <div className=" space-y-20 max-w-6xl max-desktop-s4:max-w-3xl m-auto">
           <div className="flex flex-row justify-between gap-10 items-center max-desktop-s4:flex-col">
@@ -15,17 +15,16 @@ export default function ExpertiseSection() {
               title="Our Expertise in smart and scalable AI support."
               subtitle="Leveraging cutting-edge AI technologies to deliver innovative solutions. Utilizing a Large Language Model (LLM) and the use generative AI to recommend and optimize customer service workflows"
               classTitle="section-black"
+              animation="fade-up"
             />
 
-            <div className="">
-              <img
-                loading="lazy"
-                src={sideImage}
-                data-aos="zoom-in"
-                alt="Decorative image for visual appealing"
-                className="w-[570px] h-[440px] object-contain  max-desktop-s4:h-[380px]"
-              />
-            </div>
+            <img
+              loading="lazy"
+              src={sideImage}
+              // data-aos="zoom-in"
+              alt="Decorative image for visual appealing"
+              className="h-[440px] object-cover  max-desktop-s4:w-full max-desktop-s4:h-60 rounded-2xl "
+            />
           </div>
 
           {/* cards */}
