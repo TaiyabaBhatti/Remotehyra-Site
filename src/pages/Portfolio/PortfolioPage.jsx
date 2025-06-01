@@ -27,7 +27,7 @@ export default function PortfolioPage() {
                   tag={project.tag}
                   title={project.title}
                   path={`/portfolio/case-study/${project.id}`}
-                  thumbnail={project.thumbnail ? project.thumbnail : "false"}
+                  thumbnail={project.thumbnail}
                 />
               );
             })}

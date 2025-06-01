@@ -28,6 +28,7 @@ export default function ProjectDetailedPage() {
               tagText={pageData.tag}
               title={pageData.title}
               desc={pageData.data.desc}
+              image={pageData.thumbnail}
             />
 
             {/* Hero section bg effect */}
