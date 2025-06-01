@@ -1,6 +1,6 @@
 import React from "react";
 import HighlightedCard from "./HighlightedCard";
-import sideImg from "../../assets/images/single-page-side-img.png";
+import sideImg from "../../assets/favicon/side-pattern-1-img.ico";
 
 export default function CardCollection({ dataList, tag }) {
   return (

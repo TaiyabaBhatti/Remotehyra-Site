@@ -3,6 +3,7 @@ import HeroContainer from "../Common/HeroContainer";
 import Wrapper from "../../components/ui/Wrapper";
 import services from "../../data/serviceDetailedData";
 import ServiceCard from "./ServiceCard";
+import heroImage from "../../assets/images/service-hero-img.webp";
 
 export default function ServicePage() {
   return (
@@ -11,6 +12,7 @@ export default function ServicePage() {
         tagText="our Services"
         title="AI you can trust, built for scale and security"
         desc="Cutting-edge AI solutions tailored to your business needs, AI agent resolves 60%+ of the issues Airtable users throw its way and is improving every day. It has been really impressive."
+        image={heroImage}
       />
 
       {/* Services grid */}

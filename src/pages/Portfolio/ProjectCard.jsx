@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function ProjectCard({ title, path, tag }) {
+export default function ProjectCard({ title, path, tag, thumbnail }) {
   return (
     <>
-      <div className="bg-gradient-to-r from-pink-500 to-violet-500 p-[1px] rounded-3xl  min-h-80 max-xsm:w-64">
+      <div className="bg-gradient-to-r from-pink-500 to-violet-500 p-[1px] rounded-3xl  min-h-80   max-tablet-s1:w-[460px] max-xsm:w-full">
         <div
           className="relative group flex flex-row gap-x-5 h-full  rounded-3xl   
    opacity-95 bg-darkbrown"
@@ -25,8 +25,8 @@ export default function ProjectCard({ title, path, tag }) {
           </div>
 
           <img
-            // alt={`project thumbnail of ${tag}`}
-            className="absolute top-0 left-0 rounded-3xl h-fit -z-10 object-cover"
+            src={thumbnail}
+            className="absolute top-0 left-0 rounded-t-3xl h-fit -z-10 object-fill   max-tablet-s1:rounded-3xl w-full "
           />
         </div>
       </div>

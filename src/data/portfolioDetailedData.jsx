@@ -1,6 +1,12 @@
+import rag_system_img from "../assets/images/projects/rag-system.webp";
+import ai_agent_img from "../assets/images/projects/agent-system.webp";
+import ai_automation_img from "../assets/images/projects/ai-automation.webp";
+import custom_llm_img from "../assets/images/projects/custom-llm.webp";
+
 const projects = [
   {
-    id: "rag-system",
+    id: "rag-solution",
+    thumbnail: rag_system_img,
     tag: "AI RAG Solutions",
     title: "Enterprise RAG System",
     data: {
@@ -23,6 +29,7 @@ const projects = [
   },
   {
     id: "ai-agent",
+    thumbnail: ai_agent_img,
     tag: "AI Agents",
     title: "Autonomous AI Agent Platform",
     data: {
@@ -45,6 +52,7 @@ const projects = [
   },
   {
     id: "ai-automation",
+    thumbnail: ai_automation_img,
     tag: "AI Automation",
     title: "Intelligent Process Automation",
     data: {
@@ -68,6 +76,7 @@ const projects = [
   },
   {
     id: "ai-chatbot",
+    thumbnail: ai_agent_img,
     tag: "AI Chatbots",
     title: "Advanced Customer Service AI",
     data: {
@@ -92,6 +101,7 @@ const projects = [
   },
   {
     id: "custom-llm",
+    thumbnail: custom_llm_img,
     tag: "Custom llm Solutions",
     title: "Custom LLM Solution",
     data: {
@@ -114,7 +124,8 @@ const projects = [
     },
   },
   {
-    id: "mining-system",
+    id: "rag-solution",
+    thumbnail: rag_system_img,
     tag: "AI Mining Solutions",
     title: "AI Knowledge Mining System",
     data: {
