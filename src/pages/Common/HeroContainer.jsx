@@ -10,7 +10,7 @@ export default function HeroContainer({ tagText, title, desc, image }) {
         <Wrapper animate="fade-up" properties="space-y-16">
           <div className="">
             <PageTag text={tagText} />
-            <h1 className="capitalize heading text-7xl max-tablet-s3:text-5xl  max-w-5xl leading-20 max-tablet-s3:leading-16 max-mobile-s3:leading-10   text-drakbrown font-semibold heading">
+            <h1 className="capitalize heading text-7xl max-tablet-s3:text-5xl  max-w-5xl leading-20 max-tablet-s3:leading-16  max-mobile-s5:leading-10   text-drakbrown font-semibold heading">
               {title}.
             </h1>
           </div>

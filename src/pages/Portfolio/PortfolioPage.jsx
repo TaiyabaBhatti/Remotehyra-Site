@@ -17,7 +17,7 @@ export default function PortfolioPage() {
       />
 
       {/* Projects case study cards */}
-      <section className="relative bg-darkbrown">
+      <section className="relative bg-darkbrown py-12">
         <Wrapper>
           <div className="grid grid-cols-3 gap-y-10 gap-x-12 max-desktop-s4:grid-cols-2 max-tablet-s1:grid-cols-1 max-tablet-s1:justify-items-center max-tablet-s1:w-full">
             {projects.map((project, index) => {

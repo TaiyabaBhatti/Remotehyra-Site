@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ title, path, tag, thumbnail }) {
   return (
     <>
-      <div className="bg-gradient-to-r from-pink-500 to-violet-500 p-[1px] rounded-3xl  min-h-80   max-tablet-s1:w-[460px] max-xsm:w-full">
+      <div className=" rounded-3xl  min-h-80   max-tablet-s1:w-[460px] max-xsm:w-full">
         <div
           className="relative group flex flex-row gap-x-5 h-full  rounded-3xl   
    opacity-95 bg-darkbrown"
