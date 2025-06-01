@@ -3,7 +3,7 @@ import HeroContainer from "../Common/HeroContainer";
 import SideBar from "./SideBar";
 import Wrapper from "../../components/ui/Wrapper";
 import BlogPostCarousel from "./Carousel/BlogPostCarousel";
-import heroImage from "../../assets/images/service-hero-img.webp";
+import heroImage from "../../assets/images/blog-hero-img.webp";
 
 export default function BlogPage() {
   return (

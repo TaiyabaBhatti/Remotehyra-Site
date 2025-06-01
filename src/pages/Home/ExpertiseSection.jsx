@@ -2,7 +2,7 @@ import React from "react";
 import Wrapper from "../../components/ui/Wrapper";
 import Button from "../../components/ui/Button";
 import ContentLayout from "./ContentLayout";
-import sideImage from "../../assets/images/home-side-img-3.webp";
+import sideImage from "../../assets/images/home-side-img.webp";
 import ExpertiseCard from "./ExpertiseCard";
 
 export default function ExpertiseSection() {

@@ -3,7 +3,7 @@ import HeroContainer from "../Common/HeroContainer";
 import ProjectCard from "./ProjectCard";
 import projects from "../../data/portfolioDetailedData";
 import Wrapper from "../../components/ui/Wrapper";
-import heroImage from "../../assets/images/service-hero-img.webp";
+import heroImage from "../../assets/images/portfolio-hero-img.webp";
 
 export default function PortfolioPage() {
   return (

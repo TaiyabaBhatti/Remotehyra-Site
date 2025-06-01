@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import OurStrength from "./OurStrength";
 import OurRanking from "./OurRanking";
 import HeroContainer from "../Common/HeroContainer";
-import heroImage from "../../assets/images/service-hero-img.webp";
+import heroImage from "../../assets/images/about-hero-img.webp";
 
 export default function AboutPage() {
   return (
