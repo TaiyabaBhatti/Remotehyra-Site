@@ -23,10 +23,9 @@ export default function ProjectCard({ title, path, tag, thumbnail }) {
               View case study
             </Link>
           </div>
-
           <img
             src={thumbnail}
-            className="absolute top-0 left-0 rounded-t-3xl h-fit -z-10 object-fill   max-tablet-s1:rounded-3xl w-full "
+            className="absolute top-0 left-0 rounded-3xl h-full -z-10 object-fill  w-full "
           />
         </div>
       </div>
