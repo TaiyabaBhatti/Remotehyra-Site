@@ -6,7 +6,7 @@ import Tag from "../../../components/ui/Tag";
 
 export default function BlogHeroContainer({ title, date, tag, writer }) {
   return (
-    <div className="relative overflow-hidden w-full  pt-12 max-md:pt-0 bg-whiteshade -z-50 min-h-screen ">
+    <div className="relative overflow-hidden w-full  pt-12 max-md:pt-0 bg-whiteshade -z-50 min-h-[calc(100vh-112px)]">
       <Wrapper properties="flex flex-row items-center justify-between gap-x-5 gap-y-10 max-md:flex-col-reverse">
         <div className="space-y-5">
           <PageTag text="Blog" />

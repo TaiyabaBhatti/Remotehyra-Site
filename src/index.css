@@ -221,12 +221,19 @@ background-image: linear-gradient();
 } */
 
 .service-page-icon svg {
-  font-size: 250px;
+  font-size: 200px;
 }
 
-@media (max-width: 872px) {
+@media (max-width: 988px) {
   .service-page-icon svg {
-    font-size: 200px;
+    font-size: 150px;
+    margin-block: 50px;
+  }
+}
+
+@media (max-width: 430px) {
+  .service-page-icon svg {
+    display: none;
   }
 }
 

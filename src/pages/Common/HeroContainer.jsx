@@ -3,7 +3,13 @@ import Wrapper from "../../components/ui/Wrapper";
 import PageTag from "./PageTag";
 import HeroHeadline from "./HeroHeadline";
 
-export default function HeroContainer({ tagText, title, desc, image }) {
+export default function HeroContainer({
+  tagText,
+  title,
+  desc,
+  image = null,
+  icon = null,
+}) {
   return (
     <>
       <section className="relative z-30 overflow-hidden w-full  pt-8 max-md:pt-0 bg-whiteshade min-h-[calc(100vh-112px)] max-mobile-s5:flex max-mobile-s5:items-center">
@@ -16,7 +22,11 @@ export default function HeroContainer({ tagText, title, desc, image }) {
               </h1>
             </div>
           </Wrapper>
-          <HeroHeadline image={image} desc={desc} />
+          {icon ? (
+            <HeroHeadline icon={icon} desc={desc} />
+          ) : (
+            <HeroHeadline image={image} desc={desc} />
+          )}
         </section>
       </section>
     </>

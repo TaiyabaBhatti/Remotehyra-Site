@@ -5,7 +5,7 @@ import StrengthCard from "./StrengthCard";
 
 export default function OurStrength() {
   return (
-    <section className="min-h-screen shadow-2xs">
+    <section className=" shadow-2xs">
       <Wrapper>
         <div className="flex flex-row items-center justify-between gap-x-5 gap-y-14 max-md:flex-col-reverse max-md:items-start">
           <div className="flex-1 grid gap-y-4 md:grid-cols-1 grid-cols-2 max-mobile-s1:grid-cols-1">

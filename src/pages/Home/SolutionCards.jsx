@@ -18,10 +18,12 @@ export default function SolutionCards({
              before:opacity-65
               before:text-white before:left-0 before:-top-5  before:font-bold  before:flex before:items-center before:justify-center`}
     >
-      <h1 className="sub-title font-semibold text-lg text-darkbrown">
+      <h1 className="font-semibold text-lg max-mobile-s5:text-base text-darkbrown">
         {title}
       </h1>
-      <p className="sub-desc text-base font-normal text-hoverGray">{desc}</p>
+      <p className="text-base max-mobile-s5:text-sm  font-normal text-hoverGray">
+        {desc}
+      </p>
     </div>
   );
 }

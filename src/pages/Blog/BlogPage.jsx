@@ -12,7 +12,7 @@ export default function BlogPage() {
         tagText="Blog"
         title="Latest Insights"
         desc="Stay updated with the latest trends in AI and technology
-          "
+    "
         image={heroImage}
       />
 
