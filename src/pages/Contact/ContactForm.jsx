@@ -16,10 +16,28 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
-  const submitForm = () => {
-    NotificationPopup("Form Submitted, Successfully", "success");
-    setIsLoading(true);
-    form.current.reset();
+  const submitForm = async () => {
+    try {
+      setIsLoading(true);
+      const response = await emailjs.sendForm(
+        import.meta.env.VITE_SERVICE_KEY,
+        import.meta.env.VITE_TEMPLATE_KEY,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      );
+
+      NotificationPopup("Form Submitted, Successfully", "success");
+      setIsLoading(false);
+      form.current.reset();
+    } catch (error) {
+      setIsLoading(false);
+      NotificationPopup(
+        "Their is possibly an issue, Form not submitted",
+        "error"
+      );
+    }
   };
 
   return (
@@ -40,7 +58,7 @@ export default function ContactForm() {
           <InputBlock
             labeltext="Email address"
             inputType="email"
-            name="email"
+            name="user-email"
             register={register}
             error={errors}
             patt={true}
